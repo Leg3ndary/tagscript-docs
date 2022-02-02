@@ -9,6 +9,11 @@ This is an unofficial guide to Carl-bot's tagscript, written by `_Leg3ndary#5759
 
 Containing knowledge from many users accross the globe!
 
+.. ansi-block::
+
+   Testing an ansi code block!
+   [1;31m{halskjdlkasjd
+
 .. tip::
    If you just want a quick refresher on blocks, this tag will show you everything you need to know: `?tse <block> <https://carl.gg/t/204246>`_
 
