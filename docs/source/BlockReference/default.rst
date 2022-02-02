@@ -61,7 +61,7 @@ Args/Message
     
     This is probably the most used and important block in tagscript, it's what allows you to access what users put after an invocation.
 
-    In addition you will often need to parse this block, so it would be wise to check out :ref:`parsing`.
+    In addition you will often need to parse this block, so it would be wise to check out :ref:`parsing-label`.
 
 .. code:: css
     
