@@ -72,7 +72,7 @@ Parameters
 
 When used without a parameter, the block will output the servers name
 
-.. warning:: 
+.. warning::
 
     Some of these are depreciated.
 
