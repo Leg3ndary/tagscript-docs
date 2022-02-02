@@ -7,8 +7,7 @@ Home
 
 This is an unofficial guide to Carl-bot's tagscript, written by `_Leg3ndary#5759 <https://discordapp.com/users/360061101477724170/>`_
 
-Check out the  section for further information, including
-how to the project.
+Containing knowledge from many users accross the globe!
 
 .. note::
 
@@ -29,7 +28,7 @@ how to the project.
    GettingStarted/creating_tags
 
 .. toctree::
-   :caption: Getting Started
+   :caption: Frequently Asked Questions
    :maxdepth: 5
    :hidden:
 
