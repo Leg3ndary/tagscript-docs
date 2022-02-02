@@ -9,6 +9,9 @@ This is an unofficial guide to Carl-bot's tagscript, written by `_Leg3ndary#5759
 
 Containing knowledge from many users accross the globe!
 
+.. tip::
+   If you just want a quick refresher on blocks, this tag will show you everything you need to know: `?tse <block> <https://carl.gg/t/204246>`_
+
 .. note::
 
    This documentation is still under development.
@@ -19,6 +22,14 @@ Containing knowledge from many users accross the globe!
    :hidden:
 
    contributing
+   credits
+
+.. toctree::
+   :caption: Frequently Asked Questions
+   :maxdepth: 5
+   :hidden:
+
+   FAQ/tag_limits
 
 .. toctree::
    :caption: Getting Started
@@ -28,11 +39,10 @@ Containing knowledge from many users accross the globe!
    GettingStarted/creating_tags
 
 .. toctree::
-   :caption: Frequently Asked Questions
+   :caption: Advanced Concepts
    :maxdepth: 5
    :hidden:
-
-   FAQ/tag_limits
+   AdvancedConcepts/tag_saving
 
 .. raw:: html
 

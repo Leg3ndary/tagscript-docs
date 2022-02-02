@@ -12,9 +12,8 @@ Examples of blocks that you can use that have loop-like features:
 
 .. code:: ansi
 
-    [1;31m{[0;0mreplace[1;31m}[0;0m
-    [1;31m{[0;0mjoin[1;31m}[0;0m
-    b'\x1b[34;41;01m"\x1b[39;49;00m\x1b[34;41;01mHello World\x1b[39;49;00m\x1b[34;41;01m"\x1b[39;49;00m'
+    {replace}
+    {join}
 
 Tag Recursion
 -------------
