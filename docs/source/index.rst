@@ -1,7 +1,7 @@
 Home
 ====
 
-.. warning::
+.. attention::
 
    This is not affiliated in any way with Botlabs or Carl-bot.
 
@@ -12,7 +12,7 @@ how to the project.
 
 .. note::
 
-   This project is under active development.
+   This documentation is still under development.
 
 .. toctree::
    :caption: Info
@@ -34,3 +34,12 @@ how to the project.
    :hidden:
 
    FAQ/tag_limits
+
+.. raw:: html
+
+   <meta property="og:title" content="Site Title" />
+   <meta property="og:type" content="Site Content" />
+   <meta property="og:url" content="http://google.com/" />
+   <meta property="og:image" content="https://i.imgur.com/PllK6g6.png" />
+   <meta property="og:description" content="Site description" />
+   <meta name="theme-color" content="#FF0000">
