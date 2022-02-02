@@ -2,7 +2,7 @@
 Parsing 
 =======
 
-.. _parsing-label: 
+.. _parsing-label:
 Parsing
 -------
 Parsing voila

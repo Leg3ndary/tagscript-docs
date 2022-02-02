@@ -144,7 +144,7 @@ React(u)
 
 React blocks will react to what carl outputs, while reactu blocks will react to the tags invocation.
 
-.. info::
+.. attention::
 
     In tags you're limited to 1 reaction without premium, and 5 with premium
 
