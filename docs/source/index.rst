@@ -39,9 +39,17 @@ Containing knowledge from many users accross the globe!
    GettingStarted/creating_tags
 
 .. toctree::
+   :caption: Block Reference
+   :maxdepth: 5
+   :hidden:
+
+   BlockReference/anatomy
+
+.. toctree::
    :caption: Advanced Concepts
    :maxdepth: 5
    :hidden:
+
    AdvancedConcepts/tag_saving
 
 .. raw:: html
