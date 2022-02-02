@@ -14,8 +14,12 @@ Credits
 
    `_Leg3ndary#5759 <https://discordapp.com/users/360061101477724170/>`_ The original creator of these docs
 
-.. |user2| image:: default.png
+.. |user2| image:: images/default.png
    :width: 30%
+
+   This could be you!
 
 .. |user3| image:: images/default.png
     :width: 30%
+
+    This could be you!
