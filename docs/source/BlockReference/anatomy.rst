@@ -7,7 +7,7 @@ When we refer to blocks we mean anything that contains both an opening ``{`` and
     
     Carl will always evaluate brackets so because of this behaviour, you may not have any ``{`` or ``}`` in any block.
 
-Some examples include
+Some examples include:
 
 .. code:: css
 
@@ -15,15 +15,24 @@ Some examples include
     {command}
     {let}
 
-In addition blocks may have parameters and or a payload.
+The name of the block will determine how the parameters and payload are evaluated.
 
-Parameters will be defined straight after the block name ``{block(PARAMETERS)}``
+Parameters and Payloads
+-----------------------
+
+Parameters
+~~~~~~~~~~
+
+Parameters will be defined straight after the block name ``{block(PARAMETERS)}``, parameters will usually let us alter the payload depending on what we put in it.
 
 .. warning::
 
     You also may not have any ``(`` or ``)`` in parameters.
 
-Payloads will also be defined after the command name using a ``:``, unless parameters were added, in that case, it will go straight after parameters instead
+Payloads
+~~~~~~~~
+
+Payloads will also be defined after the command name using a ``:``, unless parameters were added, in that case, it will go straight after parameters instead. Payloads are the text that we want to alter/use.
 
 ``{block:PAYLOAD}``
 ``{block(PARAMETERS):PAYLOAD}``
@@ -31,6 +40,9 @@ Payloads will also be defined after the command name using a ``:``, unless param
 .. note::
 
     Paylods unlike parameters and blocks may contain ``:``, note when working with conditional blocks such as if, or, or and, you may not be able to use ``|`` as it can break the else condition
+
+Examples
+--------
 
 .. code:: css
     
