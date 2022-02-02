@@ -6,30 +6,32 @@ Defualt variables are variables that every tag will have defined.
 Unix
 ----
 
-Returns the current unix time
-
-Often used in conjunction with strf and timedelta blocks
-
 .. code:: css
     
     {unix}
 
-.. warning::
-    
-    This is exclusive to tags.
+
+Returns the current unix time
+
+Often used in conjunction with strf and timedelta blocks
 
 .. note::
 
     To use this outside of tags, add this to the top of your code ``{=(unix):{strf:%s}}``
 
+.. warning::
+    
+    This is exclusive to tags.
+
 Uses
 ----
-
-Returns how many times your tag was used
 
 .. code:: css
     
     {uses}
+
+
+Returns how many times your tag was used
 
 .. warning::
     
@@ -37,28 +39,29 @@ Returns how many times your tag was used
 
 .. warning::
 
-    This increments even if the tag fails to output/work, the only way to reset this is too delete and re-import the tag
+    This increments even if the tag fails to output/work, the only way to reset this is to delete and re-import the tag.
 
 Mention
 -------
 
-Mentions the user who used the tag
-
 .. code:: css
 
     {mention}
+
+Mentions the user who used the tag
 
 .. note::
     
     This is the same as ``{user(mention)}``
 
 Args/Message
+------------
 
 .. important::
     
     This is probably the most used and important block in tagscript, it's what allows you to access what users put after an invocation.
 
-    In addition you will often need to parse these, so it would be wise to check out :docs:`parsing`.
+    In addition you will often need to parse this block, so it would be wise to check out :ref:`parsing`.
 
 .. code:: css
     
@@ -89,8 +92,8 @@ The main difference between args and message is how message has digit shorthands
 
 .. code:: css
 
-    {args(1)} is equivalent too {1}
-    {args(2)} is equvalent too {2}
+    {args(1)} is equivalent to {1}
+    {args(2)} is equvalent to {2}
 
 However digit shorthands are based upon the message variable, meaning if you change it, by redefining it, digit shorthands will now be based on that instead.
 
