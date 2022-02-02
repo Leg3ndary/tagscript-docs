@@ -17,7 +17,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.ansi',
+    'sphinxcontrib.ansi',
 ]
 
 intersphinx_mapping = {
@@ -37,4 +37,4 @@ html_theme = 'sphinx_rtd_theme'
 epub_show_urls = 'footnote'
 
 def setup(app):
-    app.add_stylesheet('style_sheet.css')
+    app.add_css_file('style_sheet.css')
