@@ -46,6 +46,7 @@ Containing knowledge from many users accross the globe!
    BlockReference/anatomy
    BlockReference/default
    BlockReference/discord
+   BlockReference/meta
    BlockReference/parsing
 
 .. toctree::
