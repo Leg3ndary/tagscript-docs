@@ -6,7 +6,7 @@ Defualt variables are variables that every tag will have defined.
 Unix
 ----
 
-.. code:: css
+.. code:: CSS
     
     {unix}
 
@@ -26,7 +26,7 @@ Often used in conjunction with strf and timedelta blocks
 Uses
 ----
 
-.. code:: css
+.. code:: CSS
     
     {uses}
 
@@ -44,7 +44,7 @@ Returns how many times your tag was used
 Mention
 -------
 
-.. code:: css
+.. code:: CSS
 
     {mention}
 
@@ -63,14 +63,14 @@ Args/Message
 
     In addition you will often need to parse this block, so it would be wise to check out :ref:`parsing-label`.
 
-.. code:: css
+.. code:: CSS
     
     {args}
     {message}
 
 What is after a tag invocation:
 
-.. code:: css
+.. code:: CSS
 
     ?foo bar baz
 
@@ -82,7 +82,7 @@ What is after a tag invocation:
 Digit Shorthands
 ~~~~~~~~~~~~~~~~
 
-.. code:: css
+.. code:: CSS
 
     {1}
     {2}
@@ -90,7 +90,7 @@ Digit Shorthands
 
 The main difference between args and message is how message has digit shorthands.
 
-.. code:: css
+.. code:: CSS
 
     {args(1)} is equivalent to {1}
     {args(2)} is equvalent to {2}

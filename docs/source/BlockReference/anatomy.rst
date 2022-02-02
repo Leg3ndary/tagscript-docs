@@ -9,7 +9,7 @@ When we refer to blocks we mean anything that contains both an opening ``{`` and
 
 Some examples include:
 
-.. code:: css
+.. code:: CSS
 
     {user}
     {command}
@@ -44,7 +44,7 @@ Payloads will also be defined after the command name using a ``:``, unless param
 Examples
 --------
 
-.. code:: css
+.. code:: CSS
     
     // The blocks parameter in this case is "avatar"
     {user(avatar)}
