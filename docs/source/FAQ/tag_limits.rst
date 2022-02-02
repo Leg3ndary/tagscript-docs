@@ -1,4 +1,5 @@
-# Limits
+Limits
+======
 
 There are many limits in tagscript, and some more when you use Carl.
 
