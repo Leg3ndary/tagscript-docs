@@ -44,6 +44,9 @@ Containing knowledge from many users accross the globe!
    :hidden:
 
    BlockReference/anatomy
+   BlockReference/default
+   BlockReference/discord
+   BlockReference/parsing
 
 .. toctree::
    :caption: Advanced Concepts
