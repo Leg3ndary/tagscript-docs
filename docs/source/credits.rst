@@ -15,6 +15,8 @@ Credits
 .. |person3| image:: images/default.png
     :alt: Image Failed Loading.
 
+If you know how to fix this please help me, and add your name here
+
 .. table:: Credits
     :align: center
 
