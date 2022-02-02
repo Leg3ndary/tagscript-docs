@@ -6,7 +6,7 @@ Discord related default variables
 User/Target
 -----------
 
-.. code:: css
+.. code:: CSS
     
     {user}
     {target}
@@ -59,7 +59,7 @@ When used without a parameter (``{user}/{target}``), the block will output the n
 Server
 ------
 
-.. code:: css
+.. code:: CSS
 
     {server}
 
@@ -69,6 +69,8 @@ Contains details about the server
 
 Parameters
 ~~~~~~~~~~
+
+When used without a parameter, the block will output the servers name
 
 .. warning:: 
 
@@ -101,3 +103,33 @@ Parameters
 +---------------------------+------------------------------------------------------------------------------|
 | created_at                | When the server was created in the format yyyy-mm-dd HH:MM:SS                |
 +---------------------------+------------------------------------------------------------------------------+
+
+Channel
+-------
+
+.. code:: CSS
+
+    {channel}
+
+    {channel(topic)}
+
+Contains details about the channel
+
+Parameters
+~~~~~~~~~~
+
+When used without a parameter, the block will output the channel name
+
++-----------+---------------------------------------------------------------------------------------+
+| Parameter | Output                                                                                |
++===========+=======================================================================================+
+| id        | The channels id                                                                       |
++-----------+---------------------------------------------------------------------------------------+
+| topic     | The channels topic                                                                    |
++-----------+---------------------------------------------------------------------------------------+
+| slowmode  | The channels discord slowmode delay in seconds                                        |
++-----------+---------------------------------------------------------------------------------------+
+| position  | The channels position, in the order of which channels were created, 0 being the first |
++-----------+---------------------------------------------------------------------------------------+
+| mention   | Clickable link to the channel                                                         |
++-----------+---------------------------------------------------------------------------------------+
