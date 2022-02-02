@@ -7,19 +7,23 @@ Credits
     If you've contributed before, feel free to add your username/other info here
 
 .. |person1| image:: images/_Leg3ndary.png
-    :width: 30%
+    :align: center
+    :alt: Image Failed Loading.
 
 .. |person2| image:: images/default.png
-    :width: 30%
+    :align: center
+    :alt: Image Failed Loading.
 
 .. |person3| image:: images/default.png
-    :width: 30%
+    :align: center
+    :alt: Image Failed Loading.
 
-.. table:: My table
+.. table:: Credits
     :align: center
 
-    +-----------+-----------+-----------+
-    | |person1| | |person2| | |person3| |
-    +-----------+-----------+-----------+
-    |       a   |      a    |      a    |
-    +-----------+-----------+-----------+
+    +-----------------------------------------------------------------------+--------------------+--------------------+
+    | |person1|                                                             | |person2|          | |person3|          |
+    +-----------------------------------------------------------------------+--------------------+--------------------+
+    | `_Leg3ndary#5759 <https://discordapp.com/users/360061101477724170/>`_ | This could be you! | This could be you! |
+    | Original Creator of these docs                                        |                    |                    |
+    +-----------------------------------------------------------------------+--------------------+--------------------+
