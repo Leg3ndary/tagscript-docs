@@ -9,4 +9,4 @@ If you believe something here is incorrect or would like to add something else, 
 
 .. note::
     
-    If you do decide to contribute, make sure to check out :Credits:`credits` so you can be added!
+    If you do decide to contribute, make sure to check out :doc:`credits` so you can be added!
