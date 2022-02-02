@@ -6,16 +6,20 @@ Credits
 
     If you've contributed before, feel free to add your username/other info here
 
-.. list-table:: Credits!
+.. |person1| image:: images/_Leg3ndary.png
+    :width: 30%
 
-   * - .. figure:: images/_Leg3ndary.png
+.. |person2| image:: images/default.png
+    :width: 30%
 
-      `_Leg3ndary#5759 <https://discordapp.com/users/360061101477724170/>`_ The original creator of these docs
+.. |person3| image:: images/default.png
+    :width: 30%
 
-   - .. figure:: images/default.png
+.. table:: My table
+    :align: center
 
-      This could be you!
-
-   - .. figure:: images/default.png
-
-      This could be you!
+    +-----------+-----------+-----------+
+    | |person1| | |person2| | |person3| |
+    +-----------+-----------+-----------+
+    |       a   |      a    |      a    |
+    +-----------+-----------+-----------+
