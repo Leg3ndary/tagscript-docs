@@ -27,15 +27,15 @@ operators_dict = {
     "!=": "☺notequal☺",
     ">=": "☺greaterequal☺",
     "<=": "☺lesserequal☺",
-    "|": "[0;35m|",
-    "+": "[0;31m+",
-    "/": "[0;31m/",
-    "*": "[0;31m*",
+    "|": "[1;35m|",
+    "+": "[1;31m+",
+    "/": "[1;31m/",
+    "*": "[1;31m*",
     "~": "[1;33m~",
     ",": "[1;33m,",
-    "__": "[0;31__",
-    "^": "[0;31^",
-    "-": "[0;31-",
+    "__": "[1;31__",
+    "^": "[1;31^",
+    "-": "[1;31-",
 }
 
 syntax_dict = {
@@ -47,8 +47,8 @@ syntax_dict = {
 }
 
 blocks_dict = {
-    ">": "[0;31m>", # I know these 2 are operators, but so that everything get's parsed correctly they have to be here or another dict.
-    "<": "[0;31m<",
+    ">": "[1;31m>", # I know these 2 are operators, but so that everything get's parsed correctly they have to be here or another dict.
+    "<": "[1;31m<",
     "=": "[1;32m=",
     "var": "[1;32mvar",
     "let": "[1;32mlet",
@@ -140,10 +140,10 @@ payload_dict = {
 }
 
 final_operators_dict = {
-    "☺equal☺": "[0;35m==",
-    "☺notequal☺": "[0;35m!=",
-    "☺greaterequal☺": "[0;35m>=",
-    "☺lesserequal☺": "[0;35m<=",
+    "☺equal☺": "[1;35m==",
+    "☺notequal☺": "[1;35m!=",
+    "☺greaterequal☺": "[1;35m>=",
+    "☺lesserequal☺": "[1;35m<=",
 }
 
 strf_flags = {
@@ -155,27 +155,27 @@ def gen_tag_ansi(text: str) -> str:
     """Generates some tagscript ansi :)"""
 
     for key, value in operators_dict.items():
-        text = text.replace(key, f"{value}[0;30m") # not using concatenation for speed, im pre sure its supposed to be slower as it creates copies of the string to use
+        text = text.replace(key, f"{value}[1;30m") # not using concatenation for speed, im pre sure its supposed to be slower as it creates copies of the string to use
     
     for key, value in syntax_dict.items():
-        text = text.replace(key, f"{value}[0;30m")
+        text = text.replace(key, f"{value}[1;30m")
 
     for key, value in blocks_dict.items():
-        text = text.replace(key, f"{value}[0;30m")
+        text = text.replace(key, f"{value}[1;30m")
 
     for key, value in params_dict.items():
-        text = text.replace(key, f"{value}[0;30m")
+        text = text.replace(key, f"{value}[1;30m")
 
     for key, value in meta_dict.items():
-        text = text.replace(key, f"{value}[0;30m")
+        text = text.replace(key, f"{value}[1;30m")
 
     for key, value in payload_dict.items():
-        text = text.replace(key, f"{value}[0;30m")
+        text = text.replace(key, f"{value}[1;30m")
 
     for key, value in final_operators_dict.items():
-        text = text.replace(key, f"{value}[0;30m")
+        text = text.replace(key, f"{value}[1;30m")
     
-    text = text.replace("[0;30m[", "[")
+    text = text.replace("[1;30m[", "[")
     
     return text
 
