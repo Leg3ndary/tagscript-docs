@@ -6,10 +6,9 @@ Defualt variables are variables that every tag will have defined.
 Unix
 ----
 
-.. code:: CSS
+.. ansi-block::
     
-    {unix}
-
+    [1;31m{[1;32munix[1;31m}[1;37m
 
 Returns the current unix time
 
@@ -26,10 +25,9 @@ Often used in conjunction with strf and timedelta blocks
 Uses
 ----
 
-.. code:: CSS
+.. ansi-block::
     
-    {uses}
-
+    [1;31m{[1;32muses[1;31m}[1;37m
 
 Returns how many times your tag was used
 
@@ -46,7 +44,7 @@ Mention
 
 .. code:: CSS
 
-    {mention}
+    [1;31m{[1;32mmention[1;31m}[1;37m
 
 Mentions the user who used the tag
 
@@ -63,18 +61,19 @@ Args/Message
 
     In addition you will often need to parse this block, so it would be wise to check out :ref:`parsing-label`.
 
-.. code:: CSS
+.. ansi-block::
     
-    {args}
-    {message}
+    [1;31m{[1;32margs[1;31m}[1;37m
+    [1;31m{[1;32mmessage[1;31m}[1;37m
 
 What is after a tag invocation:
 
-.. code:: CSS
+.. ansi-block::
 
     ?foo bar baz
 
-    {args} will output bar baz
+    [1;31m{[1;32margs[1;31m}[1;37m will output bar baz
+
 
 .. note::
     If used in a tag, this block will also contain the trigger invocation.
@@ -82,18 +81,18 @@ What is after a tag invocation:
 Digit Shorthands
 ~~~~~~~~~~~~~~~~
 
-.. code:: CSS
+.. ansi-block::
 
-    {1}
-    {2}
-    {3} etc.
+    [1;31m{[1;37m1[1;31m}[1;37m
+    [1;31m{[1;37m2[1;31m}[1;37m
+    [1;31m{[1;37m3[1;31m}[1;37m etc.
 
 The main difference between args and message is how message has digit shorthands.
 
-.. code:: CSS
+.. ansi-block::
 
-    {args(1)} is equivalent to {1}
-    {args(2)} is equvalent to {2}
+    [1;31m{[1;32margs[1;34m([1;37m1[1;34m)[1;31m}[1;37m is equivalent to [1;31m{[1;37m1[1;31m}[1;37m
+    [1;31m{[1;32margs[1;34m([1;37m2[1;34m)[1;31m}[1;37m is equvalent to [1;31m{[1;37m2[1;31m}[1;37m
 
 However digit shorthands are based upon the message variable, meaning if you change it, by redefining it, digit shorthands will now be based on that instead.
 
