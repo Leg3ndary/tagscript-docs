@@ -191,8 +191,8 @@ params_dict = {
 }
 
 meta_dict = {
-    "{del": "{[1;33mdel",
     "{delete": "{[1;33mdelete",
+    "{del": "{[1;33mdel",
     "{silence": "{[1;33msilence",
     "{dm": "{[1;33mdm",
     "{override": "{[1;33moverride",
@@ -201,8 +201,8 @@ meta_dict = {
     "{redirect": "{[1;33mredirect",
     "{react": "{[1;33mreact",
     "{reactu": "{[1;33mreactu",
-    ":del": ":[1;33mdel",
     ":delete": ":[1;33mdelete",
+    ":del": ":[1;33mdel",
     ":silence": ":[1;33msilence",
     ":dm": ":[1;33mdm",
     ":override": ":[1;33moverride",
@@ -211,8 +211,8 @@ meta_dict = {
     ":redirect": ":[1;33mredirect",
     ":react": ":[1;33mreact",
     ":reactu": ":[1;33mreactu",
-    "|del": "|[1;33mdel",
     "|delete": "|[1;33mdelete",
+    "|del": "|[1;33mdel",
     "|silence": "|[1;33msilence",
     "|dm": "|[1;33mdm",
     "|override": "|[1;33moverride",
@@ -285,14 +285,8 @@ def gen_tag_ansi(text: str) -> str:
 
 # literally just shit tons of replaces lol
 
-code = """    {args(1)} is equivalent to {1}
-    {args(2)} is equvalent to {2}
-"""
-
-if not code:
-    code = str(input("Input your tag please: "))
-
-
+with open("output.txt", "r") as text_file:
+    code = text_file.read()
 
 new_code = gen_tag_ansi(code)
 
