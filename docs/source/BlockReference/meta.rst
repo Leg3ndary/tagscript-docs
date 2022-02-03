@@ -6,20 +6,20 @@ Meta blocks are blocks that will change a tags overall behaviour, this includes 
 Delete
 ------
 
-.. code:: CSS
+.. ansi-block::
 
-    {delete}
-    {del}
+    [1;31m[1;31m{[1;33mdelete[1;31m[1;31m}[1;37m
+    [1;31m[1;31m{[1;33mdel[1;31m[1;31m}[1;37m
 
 Deletes the message which invoked the commmand
 
 Silent
 ------
 
-.. code:: CSS
+.. ansi-block::
 
-    {silent}
-    {silence}
+    [1;31m{[1;33msilent[1;31m}[1;37m
+    [1;31m{[1;33msilence[1;31m}[1;37m
 
 Silences any command block outputs
 
@@ -27,9 +27,9 @@ Silences any command block outputs
 Override
 --------
 
-.. code:: CSS
+.. ansi-block::
 
-    {override}
+    [1;31m{[1;33moverride[1;31m}[1;37m
 
 Overrides any permissions needed to run a command
 
@@ -44,9 +44,9 @@ Overrides any permissions needed to run a command
 Direct Message
 --------------
 
-.. code:: CSS
+.. ansi-block::
 
-    {dm}
+    [1;31m{[1;33mdm[1;31m}[1;37m
 
 This will instead send the output to a users direct messages (DMS)
 
@@ -57,9 +57,9 @@ This will instead send the output to a users direct messages (DMS)
 Redirect
 --------
 
-.. code:: CSS
+.. ansi-block::
 
-    {redirect:channel_id}
+    [1;31m{[1;33mredirect[1;34m:[1;32mchannel[1;37m_id[1;31m}[1;37m
 
 Redirect will redirect the output to whatever channel id you provide
 
@@ -74,13 +74,13 @@ Require/Blacklist
 
     You can use technically use the role/channel name though it is heavily discouraged, if that name ever changes, the tag will cease to work properly, while using ids will stay the same forever.
 
-.. code:: CSS
+.. ansi-block::
     
-    {require(Optional Error Message):Required Roles, Channels}
-    {blacklist(Optional Error Message):Blacklisted Roles, Channels}
+    [1;31m{[1;33mrequire[1;34m([1;37mOptional Error Message[1;34m)[1;34m:[1;37mRequired Roles[1;33m,[1;37m Channels[1;31m}[1;37m
+    [1;31m{[1;33mblacklist[1;34m([1;37mOptional Error Message[1;34m)[1;34m:[1;37mBlacklisted Roles[1;33m,[1;37m Channels[1;31m}[1;37m
 
-    {require(You aren't a moderator, or you aren't using this in the right channel):209797471608635392,465563733981265921}
-    {blacklist(Muted users aren't allowed to use this command, if you aren't muted, use #bot-commands):469237398279159818,456625369974308866}
+    [1;31m{[1;33mrequire[1;34m([1;37mYou aren't a moderator[1;33m,[1;37m or you aren't using this in the right channel[1;34m)[1;34m:[1;37m209797471608635392[1;33m,[1;37m465563733981265921[1;31m}[1;37m
+    [1;31m{[1;33mblacklist[1;34m([1;37mMuted users aren't allowed to use this command[1;33m,[1;37m if you aren't muted[1;33m,[1;37m use #bot[1;31-[1;37mcommands[1;34m)[1;34m:[1;37m469237398279159818[1;33m,[1;37m456625369974308866[1;31m}[1;37m
 
 Require is the easiest way to require a user to have a role, or use it in a specific channel.
 
@@ -93,11 +93,11 @@ Blacklist is also an easy way for blacklisting certain channels and or roles fro
 Parameters
 ~~~~~~~~~~
 
-.. code:: CSS
+.. ansi-block::
 
-    {require(ERROR MESSAGE):209797471608635392}
+    [1;31m{[1;33mrequire[1;34m([1;37mERROR MESSAGE[1;34m)[1;34m:[1;37m209797471608635392[1;31m}[1;37m
 
-    {blacklist(ERROR MESSAGE):469237398279159818}
+    [1;31m{[1;33mblacklist[1;34m([1;37mERROR MESSAGE[1;34m)[1;34m:[1;37m469237398279159818[1;31m}[1;37m
 
 .. note::
     
@@ -120,11 +120,11 @@ The error message that will output when the user is using the tag when they have
 Payload
 ~~~~~~~
 
-.. code:: CSS
+.. ansi-block::
 
-    {require(You aren't a moderator!):ID LIST}
+    [1;31m{[1;33mrequire[1;34m([1;37mYou aren't a moderator![1;34m)[1;34m:[1;37mID LIST[1;31m}[1;37m
 
-    {require(You can't use this command here!):ID LIST}
+    [1;31m{[1;33mrequire[1;34m([1;37mYou can't use this command here![1;34m)[1;34m:[1;37mID LIST[1;31m}[1;37m
 
 A list of role or channel ids separated by ``,`` with no spaces inbetween.
 
@@ -137,10 +137,10 @@ As long as the user using the tag has one of the role ids, and one of the channe
 React(u)
 ---------
 
-.. code:: CSS
+.. ansi-block::
     
-    {react\: \:turtle: \:robot:}
-    {reactu\: \:turtle: \:robot:}
+    [1;31m{[1;33mreact[1;34m:[1;37m [1;34m:[1;37mturtle[1;34m:[1;37m [1;34m:[1;37mrobot[1;34m:[1;31m}[1;37m
+    [1;31m{[1;33mreactu[1;34m:[1;37m [1;34m:[1;37mturtle[1;34m:[1;37m [1;34m:[1;37mrobot[1;34m:[1;31m}[1;37m
 
 React blocks will react to what carl outputs, while reactu blocks will react to the tags invocation.
 
@@ -153,9 +153,9 @@ React blocks will react to what carl outputs, while reactu blocks will react to 
 Payload
 ~~~~~~~
 
-.. code:: CSS
+.. ansi-block::
 
-    {react:EMOJI LIST}
-    {reactu:EMOJI LIST}
+    [1;31m{[1;33mreact[1;34m:[1;37mEMOJI LIST[1;31m}[1;37m
+    [1;31m{[1;33mreactu[1;34m:[1;37mEMOJI LIST[1;31m}[1;37m
 
 The emoji list should be separated by spaces, for custom discord emojis, send a ``\`` in front of it and send it to a channel, use what you then see.
