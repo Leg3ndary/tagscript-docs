@@ -64,29 +64,29 @@ blocks_dict = {
     "and": "[1;33mand",
     "or": "[1;33mor",
     "unix": "[1;32munix",
-    "uses": "[1;32m",
-    "args": "[1;32m",
-    "join": "[1;32m",
-    "message": "[1;32m",
-    "replace": "[1;32m",
-    "contains": "[1;32m",
-    "strf": "[1;32m",
-    "#": "[1;32m",
-    "random": "[1;32m",
-    "rand": "[1;32m",
-    "urlencode": "[1;32m",
-    "td": "[1;32m",
-    "index": "[1;32m",
-    "list": "[1;32m",
-    "cycle": "[1;32m",
-    "in": "[1;32m",
-    "upper": "[1;32m",
-    "lower": "[1;32m",
-    "math": "[1;32m", # regular math removed because it breaks everything
-    "range": "[1;32m",
-    "?": "[1;32m",
-    "rangef": "[1;32m",
-    "embed": "[1;32m",
+    "uses": "[1;32muses",
+    "args": "[1;32margs",
+    "join": "[1;32mjoin",
+    "message": "[1;32mmessage",
+    "replace": "[1;32mreplace",
+    "contains": "[1;32mcontains",
+    "strf": "[1;32mstrf",
+    "#": "[1;32m#",
+    "random": "[1;32mrandom",
+    "rand": "[1;32mrand",
+    "urlencode": "[1;32murlencode",
+    "td": "[1;32mtd",
+    "index": "[1;32mindex",
+    "list": "[1;32mlist",
+    "cycle": "[1;32mcycle",
+    "in": "[1;32min",
+    "upper": "[1;32mupper",
+    "lower": "[1;32mlower",
+    "math": "[1;32mmath", # regular math removed because it breaks everything
+    "range": "[1;32mrange",
+    "?": "[1;32m?",
+    "rangef": "[1;32mrangef",
+    "embed": "[1;32membed",
 }
 
 params_dict = {
@@ -174,6 +174,8 @@ def gen_tag_ansi(text: str) -> str:
 
     for key, value in final_operators_dict.items():
         text = text.replace(key, f"{value}[0;0m")
+    
+    text = text.replace("[0;0m[", "[")
     
     return text
 
