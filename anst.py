@@ -47,8 +47,8 @@ syntax_dict = {
 }
 
 blocks_dict = {
-    ">": "[0;31>", # I know these 2 are operators, but so that everything get's parsed correctly they have to be here or another dict.
-    "<": "[0;31<",
+    ">": "[0;31m>", # I know these 2 are operators, but so that everything get's parsed correctly they have to be here or another dict.
+    "<": "[0;31m<",
     "=": "[1;32m=",
     "var": "[1;32mvar",
     "let": "[1;32mlet",
