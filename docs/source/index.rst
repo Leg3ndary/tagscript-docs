@@ -24,6 +24,8 @@ Containing knowledge from many users accross the globe!
    [1;31m{[1;32m=[1;34m([1;37msel[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32mcontains[1;34m([1;31m{[1;37mL1[1;31m}[1;34m)[1;34m:[1;37mon off[1;31m}[1;35m==[4;36mfalse[1;34m)[1;34m:[1;37merror[1;35m|[1;31m{[1;37mtemplate[1;31m}[1;31m}[1;31m}[1;37m
    [1;31m{[1;33moverride[1;31m}[1;31m{[1;31m{[1;37msel[1;31m}[1;31m}[1;37m
 
+   - Raffael#1372's AFK Tag
+
    All of this documentation contains custom tagscript syntax highlighting through ansi!
 
 .. tip::
