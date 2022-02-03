@@ -80,7 +80,7 @@ Require/Blacklist
     [1;31m{[1;33mblacklist[1;34m([1;37mOptional Error Message[1;34m)[1;34m:[1;37mBlacklisted Roles[1;33m,[1;37m Channels[1;31m}[1;37m
 
     [1;31m{[1;33mrequire[1;34m([1;37mYou aren't a moderator[1;33m,[1;37m or you aren't using this in the right channel[1;34m)[1;34m:[1;37m209797471608635392[1;33m,[1;37m465563733981265921[1;31m}[1;37m
-    [1;31m{[1;33mblacklist[1;34m([1;37mMuted users aren't allowed to use this command[1;33m,[1;37m if you aren't muted[1;33m,[1;37m use #bot[1;31-[1;37mcommands[1;34m)[1;34m:[1;37m469237398279159818[1;33m,[1;37m456625369974308866[1;31m}[1;37m
+    [1;31m{[1;33mblacklist[1;34m([1;37mMuted users aren't allowed to use this command[1;33m,[1;37m if you aren't muted[1;33m,[1;37m use #bot[1;31m-[1;37mcommands[1;34m)[1;34m:[1;37m469237398279159818[1;33m,[1;37m456625369974308866[1;31m}[1;37m
 
 Require is the easiest way to require a user to have a role, or use it in a specific channel.
 
