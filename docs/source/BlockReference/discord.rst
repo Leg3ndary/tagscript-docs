@@ -6,13 +6,13 @@ Discord related default variables
 User/Target
 -----------
 
-.. code:: CSS
+.. ansi-block::
     
-    {user}
-    {target}
+    [1;31m{[1;32muser[1;31m}[1;37m
+    [1;31m{[1;32mtarget[1;31m}[1;37m
 
-    {user(name)}
-    {target(avatar)}
+    [1;31m{[1;32muser[1;34m([1;35mname[1;34m)[1;31m}[1;37m
+    [1;31m{[1;32mtarget[1;34m([1;35mavatar[1;34m)[1;31m}[1;37m
 
 One of the most used blocks is the target block, it allows you to access other users data.
 
@@ -23,7 +23,9 @@ User is the user who invoked the tag, while target is the first user that was pi
 
     It's common to check if someone was pinged in the command, to do this you compare user against target
 
-    ``{if({user(id)}=={target(id)}):You need to ping someone|You pinged {target}}``
+    .. ansi-block::
+
+        [1;31m{[1;33mif[1;34m([1;31m{[1;32muser[1;34m([1;35mid[1;34m)[1;31m}[1;35m==[1;31m{[1;32mtarget[1;34m([1;35mid[1;34m)[1;31m}[1;34m)[1;34m:[1;37mYou need to ping someone[1;35m|[1;37mYou pinged [1;31m{[1;32mtarget[1;31m}[1;31m}[1;37m
 
 Parameters/Properties
 ~~~~~~~~~~~~~~~~~~~~~
@@ -59,11 +61,11 @@ When used without a parameter (``{user}/{target}``), the block will output the n
 Server
 ------
 
-.. code:: CSS
+.. ansi-block::
 
-    {server}
+    [1;31m{[1;32mserver[1;31m}[1;37m
 
-    {server(roles)}
+    [1;31m{[1;32mserver[1;34m([1;35mroles[1;34m)[1;31m}[1;37m
 
 Contains details about the server
 
@@ -107,11 +109,11 @@ When used without a parameter, the block will output the servers name
 Channel
 -------
 
-.. code:: CSS
+.. ansi-block::
 
-    {channel}
+    [1;31m{[1;32mchannel[1;31m}[1;37m
 
-    {channel(topic)}
+    [1;31m{[1;32mchannel[1;34m([1;35mtopic[1;34m)[1;31m}[1;37m
 
 Contains details about the channel
 
