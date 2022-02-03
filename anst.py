@@ -58,8 +58,9 @@ blocks_dict = {
     "{unix": "{[1;32munix",
     "{uses": "{[1;32muses",
     "{args": "{[1;32margs",
-    "{join": "{[1;32mjoin",
     "{message": "{[1;32mmessage",
+    "{join": "{[1;32mjoin",
+    "{mention": "{[1;32mmention",
     "{replace": "{[1;32mreplace",
     "{contains": "{[1;32mcontains",
     "{strf": "{[1;32mstrf",
@@ -96,8 +97,9 @@ blocks_dict = {
     ":unix": ":[1;32munix",
     ":uses": ":[1;32muses",
     ":args": ":[1;32margs",
-    ":join": ":[1;32mjoin",
     ":message": ":[1;32mmessage",
+    ":join": ":[1;32mjoin",
+    ":mention": ":[1;32mmention",
     ":replace": ":[1;32mreplace",
     ":contains": ":[1;32mcontains",
     ":strf": ":[1;32mstrf",
@@ -133,9 +135,9 @@ blocks_dict = {
     "|or": "|[1;33mor",
     "|unix": "|[1;32munix",
     "|uses": "|[1;32muses",
-    "|args": "|[1;32margs",
-    "|join": "|[1;32mjoin",
     "|message": "|[1;32mmessage",
+    "|join": "|[1;32mjoin",
+    "|mention": "|[1;32mmention",
     "|replace": "|[1;32mreplace",
     "|contains": "|[1;32mcontains",
     "|strf": "|[1;32mstrf",
@@ -283,14 +285,9 @@ def gen_tag_ansi(text: str) -> str:
 
 # literally just shit tons of replaces lol
 
-code = """{=(L1):{lower:{1}}}
-{=(A2+):{replace(|,REPLACETHIS):{args(2+)}}}
-{=(error):You must follow the `afk` command with either `on` or `off`.}
-{=(on):add}
-{=(off):del}
-{=(template):c:ar {{L1}} {user(id)}>{if({L1}==on): {if({list(0):{join(,):{A2+}}}!=):{A2+}|{replace(|,REPLACETHIS):{user}} is afk right now, send them a PM or wait for them to return.}}}
-{=(sel):{if({contains({L1}):on off}==false):error|{template}}}
-{override}{{sel}}"""
+code = """    {args(1)} is equivalent to {1}
+    {args(2)} is equvalent to {2}
+"""
 
 if not code:
     code = str(input("Input your tag please: "))
