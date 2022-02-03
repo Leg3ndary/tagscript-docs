@@ -5,14 +5,19 @@ Home
 
    This is not affiliated in any way with Botlabs or Carl-bot.
 
+.. attention::
+
+   Reall would like to thank `readthedocs.org <https://readthedocs.org>` for making this possible, thank you!
+
 This is an unofficial guide to Carl-bot's tagscript, written by `_Leg3ndary#5759 <https://discordapp.com/users/360061101477724170/>`_
 
 Containing knowledge from many users accross the globe!
 
 .. ansi-block::
 
-   Testing an ansi code block!
-   [1;31m{halskjdlkasjd
+   [1;31m{[0;0m=[1;34m([0;0m[1;34m)[0;0m[1;34m:[0;0m[1;31m}[0;0m
+
+   All of this documentation contains custom tagscript syntax highlighting through ansi!
 
 .. tip::
    If you just want a quick refresher on blocks, this tag will show you everything you need to know: `?tse <block> <https://carl.gg/t/204246>`_
