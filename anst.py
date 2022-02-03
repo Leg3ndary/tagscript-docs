@@ -155,27 +155,27 @@ def gen_tag_ansi(text: str) -> str:
     """Generates some tagscript ansi :)"""
 
     for key, value in operators_dict.items():
-        text = text.replace(key, f"{value}[1;30m") # not using concatenation for speed, im pre sure its supposed to be slower as it creates copies of the string to use
+        text = text.replace(key, f"{value}[1;37m") # not using concatenation for speed, im pre sure its supposed to be slower as it creates copies of the string to use
     
     for key, value in syntax_dict.items():
-        text = text.replace(key, f"{value}[1;30m")
+        text = text.replace(key, f"{value}[1;37m")
 
     for key, value in blocks_dict.items():
-        text = text.replace(key, f"{value}[1;30m")
+        text = text.replace(key, f"{value}[1;37m")
 
     for key, value in params_dict.items():
-        text = text.replace(key, f"{value}[1;30m")
+        text = text.replace(key, f"{value}[1;37m")
 
     for key, value in meta_dict.items():
-        text = text.replace(key, f"{value}[1;30m")
+        text = text.replace(key, f"{value}[1;37m")
 
     for key, value in payload_dict.items():
-        text = text.replace(key, f"{value}[1;30m")
+        text = text.replace(key, f"{value}[1;37m")
 
     for key, value in final_operators_dict.items():
-        text = text.replace(key, f"{value}[1;30m")
+        text = text.replace(key, f"{value}[1;37m")
     
-    text = text.replace("[1;30m[", "[")
+    text = text.replace("[1;37m[", "[")
     
     return text
 
