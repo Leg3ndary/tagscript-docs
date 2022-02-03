@@ -52,7 +52,7 @@ Examples
     [1;31m{[1;32muser[1;34m([1;35mavatar[1;34m)[1;31m}[1;37m
 
     The blocks payload in this case is "lock server"
-    [1;31m{[1;37mcommand[1;34m:[1;37mlock server[1;31m}[1;37m
+    [1;31m{[1;32mcommand[1;34m:[1;37mlock server[1;31m}[1;37m
 
     The blocks parameter here is "tagscript"[1;33m,[1;37m while the payload is "cool"  
     [1;31m{[1;32mlet[1;34m([1;37mtagscript[1;34m)[1;34m:[1;37mcool[1;31m}[1;37m
