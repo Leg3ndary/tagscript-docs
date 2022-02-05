@@ -1,6 +1,7 @@
 Credits
 =======
 
+Ignore this for now :) I will add this when everything else is all finished
 
 .. note::
 
@@ -23,5 +24,5 @@ If you know how to fix this please help me, and add your name here
     +-----------------------------------------------------------------------+--------------------+------------------------------------------+
     | |person1|                                                             | |person2|          | |person3|                                |
     +-----------------------------------------------------------------------+--------------------+------------------------------------------+
-    | _Leg3ndary#5759 Original Creator of these docs | This could be you!   | This could be you  | Raffael#1372 Has many tags and snippets  |
+    | _Leg3ndary#5759 Original Creator of these docs                       | This could be you  | Raffael#1372 Has many tags and snippets  |
     +-----------------------------------------------------------------------+--------------------+------------------------------------------+
