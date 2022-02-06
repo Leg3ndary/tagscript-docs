@@ -62,31 +62,65 @@ This is how we determine what to do, in this case we just print out true or fals
 | <        | Lesser Than                                                                      |
 +----------+----------------------------------------------------------------------------------+
 
+.. tip::
+    
+    An extremely common question, is how we check if a user was pinged!
+
+    We can easily check this by comparing the user id, to target id
+
+    .. ansi-block::
+
+        [1;31m{[1;33mif[1;34m([1;31m{[1;32muser[1;34m([1;35mid[1;34m)[1;31m}[1;35m==[1;31m{[1;32mtarget[1;34m([1;35mid[1;34m)[1;31m}[1;34m)[1;34m:[1;37mYou need to ping someone![1;35m|[1;37mYou pinged [1;31m{[1;32mtarget[1;31m}[1;31m}[1;37m
+
 Then/Else (Payload)
 -------------------
 
 .. ansi-block::
 
-    {if({user(id)}==235148962103951360):PAYLOAD}
+    [1;31m{[1;33mif[1;34m([1;31m{[1;32muser[1;34m([1;35mid[1;34m)[1;31m}[1;35m==[1;37m235148962103951360[1;34m)[1;34m:[1;37mTHEN[1;35m|[1;37mELSE[1;31m}[1;37m
 
+    [1;31m{[1;33mif[1;34m([1;31m{[1;32muses[1;31m}[1;35m>[1;37m10[1;34m)[1;34m:[1;37mThis command has been used more then 10 times[1;35m|[1;37mThis command has only been used [1;31m{[1;32muses[1;31m}[1;37m times![1;31m}[1;37m
 
+    [1;31m{[1;33mand[1;34m([1;31m{[1;32mtarget[1;31m}[1;35m==[1;37mCarl[1;31m-[1;37mbot[1;35m|[1;31m{[1;32mtarget[1;34m([1;35mid[1;34m)[1;31m}[1;35m!=[1;37m235148962103951360[1;34m)[1;34m:[1;37mHow dare you impersonate me![1;31m}[1;37m
+
+The payload for conditional blocks can either be a then without an else, or both, you separate these with a pipe ``|``.
 
 If
 --
 
-aa
+.. ansi-block::
+    
+    [1;31m{[1;33mif[1;34m([1;37mCONDITION[1;34m)[1;34m:[1;37mTHEN[1;35m|[1;37mELSE[1;31m}[1;37m
+
+The simplest of conditional blocks, checks a singular condition.
 
 Any/Or
 ------
 
-aa
+.. ansi-block::
+
+    [1;31m{[1;33many[1;34m([1;37mCONDITION\[1;35m\|[1;37mCONDITION\[1;35m\|[1;37mCONDITION[1;34m)[1;34m:[1;37mTHEN[1;35m|[1;37mELSE[1;31m}[1;37m
+
+If you want to check if any condition out of whatever you provide are true, you can use an any block, just separate every condition with a ``|``.
 
 All/And
 -------
 
-aa
+.. ansi-block::
+
+    [1;31m{[1;33mand[1;34m([1;37mCONDITION\[1;35m\|[1;37mCONDITION\[1;35m\|[1;37mCONDITION[1;34m)[1;34m:[1;37mTHEN[1;35m|[1;37mELSE[1;31m}[1;37m
+
+Nearly identical to the any block, this block just checks if every condition you provide is true.
 
 Break/Shortcircuit
 ------------------
 
-aa
+.. ansi-block::
+
+    [1;31m{[1;33mbreak[1;34m([1;37mCONDITION[1;34m)[1;34m:[1;37mTHEN[1;31m}[1;37m
+
+When used, if the condition given is true, the tags text output will only be whatever you put as the payload.
+
+.. danger::
+
+    This will not prevent command blocks from running or the embed from the embed builder from sending.
