@@ -99,7 +99,7 @@ Any/Or
 
 .. ansi-block::
 
-    [1;31m{[1;33many[1;34m([1;37mCONDITION\[1;35m\|[1;37mCONDITION\[1;35m\|[1;37mCONDITION[1;34m)[1;34m:[1;37mTHEN[1;35m|[1;37mELSE[1;31m}[1;37m
+    [1;31m{[1;33many[1;34m([1;37mCONDITION[1;35m|[1;37mCONDITION[1;35m|[1;37mCONDITION[1;34m)[1;34m:[1;37mTHEN[1;35m|[1;37mELSE[1;31m}[1;37m
 
 If you want to check if any condition out of whatever you provide are true, you can use an any block, just separate every condition with a ``|``.
 
@@ -108,7 +108,7 @@ All/And
 
 .. ansi-block::
 
-    [1;31m{[1;33mand[1;34m([1;37mCONDITION\[1;35m\|[1;37mCONDITION\[1;35m\|[1;37mCONDITION[1;34m)[1;34m:[1;37mTHEN[1;35m|[1;37mELSE[1;31m}[1;37m
+    [1;31m{[1;33mand[1;34m([1;37mCONDITION[1;35m|[1;37mCONDITION[1;35m|[1;37mCONDITION[1;34m)[1;34m:[1;37mTHEN[1;35m|[1;37mELSE[1;31m}[1;37m
 
 Nearly identical to the any block, this block just checks if every condition you provide is true.
 
