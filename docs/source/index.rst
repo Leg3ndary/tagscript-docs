@@ -67,6 +67,7 @@ Containing knowledge from many users accross the globe!
    BlockReference/discord
    BlockReference/meta
    BlockReference/commands
+   BlockReference/control
    BlockReference/parsing
 
 .. toctree::
