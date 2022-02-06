@@ -69,6 +69,7 @@ Containing knowledge from many users accross the globe!
    BlockReference/commands
    BlockReference/control
    BlockReference/parsing
+   BlockReference/datastorage
 
 .. toctree::
    :caption: Advanced Concepts
