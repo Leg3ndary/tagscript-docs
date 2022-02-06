@@ -42,7 +42,7 @@ Returns how many times your tag was used
 Mention
 -------
 
-.. code:: CSS
+.. ansi-block::
 
     [1;31m{[1;32mmention[1;31m}[1;37m
 

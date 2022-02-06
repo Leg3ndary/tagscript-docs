@@ -60,3 +60,7 @@ Examples
 .. important::
 
     It's strongly advised that you familiarize yourself with tags basic anatomy to avoid common errors, this will also later be essential to understand more advanced concepts such as blanks and switches
+
+.. raw:: html
+
+    |metatags|
