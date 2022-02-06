@@ -29,8 +29,6 @@ Consider the following:
     
     This just pseudo code! If you run this, it will always say Drink Water as I is not the same as hungry!
 
-The following explains what everything means
-
 Boolean Operators (Parameters)
 ------------------------------
 
@@ -48,20 +46,21 @@ Boolean Operators (Parameters)
 
 This is how we determine what to do, in this case we just print out true or false
 
-.. table:: Boolean Equations
-
-    :widths: auto
-
-    ========  ================================================================================
-    Operator  Explanation
-    ========  ================================================================================
-    \==       If the left side is exactly the same as the right side, space and case sensitive
-    !=        If the left side is different from the right side, space and case sensitive
-    >=        Greater than or equal too
-    <=        Lesser than or equal too
-    >         Greater than
-    <         Lesser Than
-    ========  ================================================================================
++----------+----------------------------------------------------------------------------------+
+| Operator | Explanation                                                                      |
++==========+==================================================================================+
+| ==       | If the left side is exactly the same as the right side, space and case sensitive |
++----------+----------------------------------------------------------------------------------+
+| !=       | If the left side is different from the right side, space and case sensitive      |
++----------+----------------------------------------------------------------------------------+
+| >=       | Greater than or equal too                                                        |
++----------+----------------------------------------------------------------------------------+
+| <=       | Lesser than or equal too                                                         |
++----------+----------------------------------------------------------------------------------+
+| >        | Greater than                                                                     |
++----------+----------------------------------------------------------------------------------+
+| <        | Lesser Than                                                                      |
++----------+----------------------------------------------------------------------------------+
 
 Then/Else (Payload)
 -------------------
