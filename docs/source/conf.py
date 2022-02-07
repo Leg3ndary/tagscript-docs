@@ -31,7 +31,10 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_static_path = ['style_sheet.css']
-html_theme = 'rtd_dark.css'
+html_theme = 'sphinx_rtd_theme'
+html_css_files = [
+    'rtd_dark.css'
+]
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
