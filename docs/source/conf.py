@@ -19,6 +19,7 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinxcontrib.ansi",
     "sphinx_rtd_dark_mode",
+    'sphinx_panels'
 ]
 
 intersphinx_mapping = {
