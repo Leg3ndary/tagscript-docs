@@ -78,6 +78,11 @@ Containing knowledge from many users accross the globe!
 
     AdvancedConcepts/tag_saving
 
+.. toctree::
+    :caption: Custom Tags
+    :maxdepth: 2
+    :hidden:
+
 .. raw:: html
 
     <meta property="og:title" content="Tagscript Unofficial Docs" />
