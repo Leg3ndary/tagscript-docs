@@ -83,6 +83,8 @@ Containing knowledge from many users accross the globe!
     :maxdepth: 2
     :hidden:
 
+    CustomTags/_Leg3ndary
+
 .. raw:: html
 
     <meta property="og:title" content="Tagscript Unofficial Docs" />
