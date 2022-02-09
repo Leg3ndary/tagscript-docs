@@ -15,7 +15,7 @@ Credits
     Pages: Link Here
 
     ---
-    :img-top: images/Default.png
+    :img-top: images/default.png
     
     Default
     ^^^^^^^

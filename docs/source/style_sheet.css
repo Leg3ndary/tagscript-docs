@@ -102,3 +102,7 @@
 .ansi-bg_white {
     background-color: #b2b2b2;
 }
+
+.wy-nav-content {
+    max-width: none;
+ }
