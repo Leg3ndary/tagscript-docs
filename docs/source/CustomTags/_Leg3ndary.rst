@@ -25,6 +25,9 @@ Check for alts using a system of checks with each being given their own weight, 
 
 .. dropdown:: Source Code
 
+    :animate: fade-in-slide-down
+    :body: bg-dark
+
     .. ansi-block::
 
         [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37m Change the prefix and the recommended action taken if needed[1;31m}[1;37m
