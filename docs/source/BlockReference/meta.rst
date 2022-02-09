@@ -23,7 +23,6 @@ Silent
 
 Silences any command block outputs
 
-.. _override-label:
 Override
 --------
 

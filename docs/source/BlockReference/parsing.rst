@@ -2,10 +2,7 @@
 Parsing 
 =======
 
-.. _parsing-label:
-Parsing
--------
-Parsing voila
+Parsing is an extremely important part of tagscript
 
 .. raw:: html
 
