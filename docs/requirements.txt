@@ -1,3 +1,2 @@
 sphinxcontrib-ansi
-sphinx-rtd-dark-mode
 sphinx-panels

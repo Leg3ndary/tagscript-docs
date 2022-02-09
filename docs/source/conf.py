@@ -18,7 +18,6 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
     "sphinxcontrib.ansi",
-    "sphinx_rtd_dark_mode",
     'sphinx_panels'
 ]
 
