@@ -109,3 +109,11 @@ Check for alts using a system of checks with each being given their own weight, 
         [1;31m{[1;37mtag.prefix[1;31m}[1;31m{[1;37mpreset.punishment[1;31m}[1;37m [1;31m{[1;32mtarget[1;34m([1;35mid[1;34m)[1;31m}[1;37m [1;31m{[1;37mpreset.reason[1;31m}[1;37m
         ```[1;35m|[1;31m}[1;31m}[1;37m
 
+.. raw:: html
+
+    <meta property="og:title" content="Tagscript Unofficial Docs" />
+    <meta property="og:type" content="Site Content" />
+    <meta property="og:site_name" content="By _Leg3ndary#5759">
+    <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
+    <meta property="og:description" content="Find _Leg3ndary#5759's tags here!" />
+    <meta name="theme-color" content="#2980B9">

@@ -46,21 +46,29 @@ Boolean Operators (Parameters)
 
 This is how we determine what to do, in this case we just print out true or false
 
-+----------+----------------------------------------------------------------------------------+
-| Operator | Explanation                                                                      |
-+==========+==================================================================================+
-| ==       | If the left side is exactly the same as the right side, space and case sensitive |
-+----------+----------------------------------------------------------------------------------+
-| !=       | If the left side is different from the right side, space and case sensitive      |
-+----------+----------------------------------------------------------------------------------+
-| >=       | Greater than or equal too                                                        |
-+----------+----------------------------------------------------------------------------------+
-| <=       | Lesser than or equal too                                                         |
-+----------+----------------------------------------------------------------------------------+
-| >        | Greater than                                                                     |
-+----------+----------------------------------------------------------------------------------+
-| <        | Lesser Than                                                                      |
-+----------+----------------------------------------------------------------------------------+
+.. tabbed:: ==
+     
+    If the left side is exactly the same as the right side, space and case sensitive
+
+.. tabbed:: !=
+    
+    If the left side is different from the right side, space and case sensitive
+
+.. tabbed:: >=
+
+    Greater than or equal too
+
+.. tabbed:: <=
+
+    Lesser than or equal too
+
+.. tabbed:: >
+
+    Greater than
+
+.. tabbed:: <
+
+    Lesser Than
 
 .. tip::
     
