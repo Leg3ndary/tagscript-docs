@@ -147,7 +147,7 @@ React blocks will react to what carl outputs, while reactu blocks will react to 
 
     In tags you're limited to 1 reaction without premium, and 5 with premium
 
-    In triggers you're limited to 3 reactions without premium, and 5 with premium *I believe
+    In triggers you're limited to 3 reactions without premium, and 5 with premium \*I believe
 
 Payload
 ~~~~~~~
