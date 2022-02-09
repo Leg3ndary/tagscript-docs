@@ -26,7 +26,9 @@ Check for alts using a system of checks with each being given their own weight, 
 .. dropdown:: Source Code
 
     :animate: fade-in-slide-down
-    :body: bg-dark
+    :container: + shadow
+    :title: bg-primary text-white text-center font-weight-bold
+    :body: bg-dark text-right font-italic
 
     .. ansi-block::
 
