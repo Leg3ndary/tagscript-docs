@@ -224,9 +224,9 @@ meta_dict = {
 }
 
 payload_dict = {
-    "true": "[4;36mtrue",
-    "false": "[4;36mfalse",
-    "now": "[4;36mnow",
+    "true": "[1;36mtrue",
+    "false": "[1;36mfalse",
+    "now": "[1;36mnow",
 }
 
 final_operators_dict = {
