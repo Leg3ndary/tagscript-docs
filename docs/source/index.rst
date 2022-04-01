@@ -31,6 +31,7 @@ Containing knowledge from many users accross the globe!
         - Raffael#1372's AFK Tag
 
 .. tip::
+
     If you just want a quick refresher on blocks, this tag will show you everything you need to know: `?tse <block> <https://carl.gg/t/204246>`_
 
 .. note::
