@@ -59,7 +59,7 @@ Args/Message
     
     This is probably the most used and important block in tagscript, it's what allows you to access what users put after an invocation.
 
-    In addition you will often need to parse this block, so it would be wise to check out :ref:`parsing-label`.
+    In addition you will often need to parse this block, so it would be wise to check out :doc:`/BlockReference/parsing`.
 
 .. ansi-block::
     
@@ -76,7 +76,7 @@ What is after a tag invocation:
 
 
 .. note::
-    If used in a tag, this block will also contain the trigger invocation.
+    If used in a trigger, this block will also contain the trigger invocation.
 
 Digit Shorthands
 ~~~~~~~~~~~~~~~~
@@ -98,7 +98,7 @@ However digit shorthands are based upon the message variable, meaning if you cha
 
 .. note::
 
-    If you don't understand digit shorthands, don't worry! They aren't really used and it's much more common to see people use ``{args(1)}``!
+    If you don't understand digit shorthands, don't worry! They aren't really used and it's much more common to see people use ``{args(1)}`` over ``{1}``!
 
 .. raw:: html
 
