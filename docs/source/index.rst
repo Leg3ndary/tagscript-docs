@@ -42,7 +42,6 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
     :maxdepth: 0
     :hidden:
 
-    index
     contributing
     credits
 
