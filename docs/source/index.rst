@@ -39,7 +39,7 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
 
 .. toctree::
     :caption: Info
-    :maxdepth: 1
+    :maxdepth: 0
     :hidden:
 
     index
