@@ -42,5 +42,5 @@ Credits
     <meta property="og:type" content="Site Content" />
     <meta property="og:site_name" content="Credits">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
-    <meta property="og:description" content="Credits" />
+    <meta property="og:description" content="A list of contributors for these docs" />
     <meta name="theme-color" content="#20bc9c">

@@ -20,5 +20,5 @@ All help is appreciated! :)
     <meta property="og:url" content="https://tagscript-docs.readthedocs.io/en/latest/index.html" />
     <meta property="og:site_name" content="Contributors">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
-    <meta property="og:description" content="The unofficial but better docs for Carl-bots Tagscript, not affiliated with Botlabs or Carl-bot" />
+    <meta property="og:description" content="A guide on how to contribute to these docs" />
     <meta name="theme-color" content="#20bc9c">
