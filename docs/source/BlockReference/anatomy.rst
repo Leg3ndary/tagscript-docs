@@ -5,14 +5,14 @@ When we refer to blocks we mean anything that contains both an opening ``{`` and
 
 .. warning::
     
-    Carl will always evaluate brackets so because of this behaviour, you may not have  ``{`` or ``}`` in any block.
+    Carl-bot will always evaluate brackets so because of this behaviour, you may not have  ``{`` or ``}`` in any block.
 
     There is no way to bypass this while writing your code.
 
 Block Names
 -----------
 
-Block names are whats inside the curly brackets, these will always be the first thing after ``{`` and is mandatory for every block.
+Block names are what's inside the curly brackets, these will always be the first thing after ``{`` and is mandatory for every block.
 
 .. note::
 
@@ -62,7 +62,7 @@ Payloads will also be defined after the command name using a ``:``, unless param
 
 .. note::
 
-    When working with conditional blocks such as if, or, or and, you may not be able to use pipes ``|`` as it can break the else condition.
+    When working with conditional blocks such as ``if``, ``or``, or ``and``, you may not be able to use vertical pipes ``|``, as it can break the *else* condition.
 
 
 .. note::
@@ -80,13 +80,13 @@ Examples
 
 .. ansi-block::
     
-    The blocks parameter in this case is "avatar"
+    The blocks' parameter in this case is "avatar"
     [1;31m{[1;32muser[1;34m([1;35mavatar[1;34m)[1;31m}[1;37m
 
-    The blocks payload in this case is "lock server"
+    The blocks' payload in this case is "lock server"
     [1;31m{[1;32mcommand[1;34m:[1;37mlock server[1;31m}[1;37m
 
-    The blocks parameter here is "tagscript"[1;33m,[1;37m while the payload is "cool"  
+    The blocks' parameter here is "tagscript"[1;33m,[1;37m while the payload is "cool"  
     [1;31m{[1;32mlet[1;34m([1;37mtagscript[1;34m)[1;34m:[1;37mcool[1;31m}[1;37m
 
 .. important::
