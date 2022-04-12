@@ -7,7 +7,7 @@ All help is appreciated! :)
 
 .. important::
 
-    Please include your ``username#discriminator`` as well as your id ``123456789012345``` as you should have some experience with tagscript.
+    Please include your ``username#discriminator`` as well as your id ``123456789012345`` as you should have some experience with tagscript.
 
 .. note::
     
