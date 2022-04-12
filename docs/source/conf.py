@@ -31,12 +31,13 @@ templates_path = ["_templates"]
 
 # -- Options for HTML output
 
-html_static_path = ["style_sheet.css"]
+html_static_path = ["style.css"]
 html_theme = "sphinx_rtd_theme"
+html_favicon = "images/tagscript-logo.ico"
 
 # -- Options for EPUB output
 epub_show_urls = "footnote"
 
 
 def setup(app):
-    app.add_css_file("style_sheet.css")
+    app.add_css_file("style.css")

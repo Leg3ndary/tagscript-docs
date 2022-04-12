@@ -40,7 +40,7 @@ Credits
 
     <meta property="og:title" content="Tagscript Unofficial Docs" />
     <meta property="og:type" content="Site Content" />
-    <meta property="og:site_name" content="By _Leg3ndary#5759">
+    <meta property="og:site_name" content="Credits">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
-    <meta property="og:description" content="Credits" />
-    <meta name="theme-color" content="#2980B9">
+    <meta property="og:description" content="A list of contributors for these docs" />
+    <meta name="theme-color" content="#20bc9c">

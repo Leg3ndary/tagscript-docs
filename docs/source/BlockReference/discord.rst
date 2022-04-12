@@ -76,7 +76,7 @@ When used without a parameter, the block will output the servers name
 
 .. warning::
 
-    Some of these are depreciated.
+    Some of these are deprecated.
 
 +---------------------------+------------------------------------------------------------------------------+
 | Parameter                 | Output                                                                       |
@@ -89,13 +89,13 @@ When used without a parameter, the block will output the servers name
 +---------------------------+------------------------------------------------------------------------------+
 | random                    | The username + discriminator of a random user                                |
 +---------------------------+------------------------------------------------------------------------------+
-| randomonline DEPRECIATED  | The username + discriminator of a random  online user                        |
+| randomonline DEPRECATED  | The username + discriminator of a random  online user                        |
 +---------------------------+------------------------------------------------------------------------------+
-| randomoffline DEPRECIATED | The username + discriminator of a random offline user                        |
+| randomoffline DEPRECATED | The username + discriminator of a random offline user                        |
 +---------------------------+------------------------------------------------------------------------------+
 | members                   | The number of members in the server                                          |
 +---------------------------+------------------------------------------------------------------------------+
-| bots DEPRECIATED          | The number of bots in the server                                             |
+| bots DEPRECATED          | The number of bots in the server                                             |
 +---------------------------+------------------------------------------------------------------------------+
 | humans BROKEN             | The number of humans in the server, returns members right now as it's broken |
 +---------------------------+------------------------------------------------------------------------------+
@@ -144,4 +144,4 @@ When used without a parameter, the block will output the channel name
     <meta property="og:site_name" content="By _Leg3ndary#5759">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
     <meta property="og:description" content="The unofficial but better docs for Carl-bots Tagscript, not affiliated with Botlabs or Carl-bot" />
-    <meta name="theme-color" content="#2980B9">
+    <meta name="theme-color" content="#9C20BC">
