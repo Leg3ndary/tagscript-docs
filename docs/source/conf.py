@@ -33,7 +33,7 @@ templates_path = ["_templates"]
 
 html_static_path = ["style.css"]
 html_theme = "sphinx_rtd_theme"
-html_favicon = "images/carl-bot.ico"
+html_favicon = "images/tagscript-logo.ico"
 
 # -- Options for EPUB output
 epub_show_urls = "footnote"
