@@ -1,13 +1,13 @@
 Creating Tags
 =============
 
-There are 2 different ways you can create tags, through the `Dashboard <https://carl.gg/>`_
+There are 2 different ways you can create tags, through the `Dashboard <https://carl.gg/>`_ or with `commands <https://docs.carl.gg/tags-and-triggers/ccs/>`_
 
 .. image:: images/creating_tags_dash1.png
     :width: 800
     :alt: Failed Loading Image.
 
-After selecting a server head into the tags section
+After selecting a server, head into the **Tags** section
 
 .. image:: images/creating_tags_dash2.png
     :width: 800
