@@ -1,3 +1,2 @@
-sphinxcontrib-ansi
 sphinx-panels
 git+https://github.com/Leg3ndary/tagscript-ansi
