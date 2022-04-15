@@ -2,7 +2,7 @@
 Parsing 
 =======
 
-Parsing is an extremely important part of tagscript
+Parsing is an extremely important part of tagscript, 
 
 .. raw:: html
 

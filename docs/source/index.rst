@@ -1,6 +1,11 @@
 Home
 ====
 
+.. tagscript::
+
+    Testing this out
+    {=(hello there):voila}
+
 .. attention::
 
     This is not affiliated in any way with Botlabs or Carl-bot.
