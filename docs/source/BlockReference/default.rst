@@ -6,9 +6,9 @@ Defualt variables are variables that every tag will have defined.
 Unix
 ----
 
-.. ansi-block::
+.. tagscript::
     
-    [1;31m{[1;32munix[1;31m}[1;37m
+    {unix}
 
 Returns the current unix time
 
@@ -25,9 +25,9 @@ Often used in conjunction with strf and timedelta blocks
 Uses
 ----
 
-.. ansi-block::
+.. tagscript::
     
-    [1;31m{[1;32muses[1;31m}[1;37m
+    {uses}
 
 Returns how many times your tag was used
 
@@ -42,9 +42,9 @@ Returns how many times your tag was used
 Mention
 -------
 
-.. ansi-block::
+.. tagscript::
 
-    [1;31m{[1;32mmention[1;31m}[1;37m
+    {mention}
 
 Mentions the user who used the tag
 
@@ -61,18 +61,18 @@ Args/Message
 
     In addition you will often need to parse this block, so it would be wise to check out :doc:`/BlockReference/parsing`.
 
-.. ansi-block::
+.. tagscript::
     
-    [1;31m{[1;32margs[1;31m}[1;37m
-    [1;31m{[1;32mmessage[1;31m}[1;37m
+    {args}
+    {message}
 
 What is after a tag invocation:
 
-.. ansi-block::
+.. tagscript::
 
     ?foo bar baz
 
-    [1;31m{[1;32margs[1;31m}[1;37m will output bar baz
+    {args} will output bar baz
 
 
 .. note::
@@ -81,18 +81,18 @@ What is after a tag invocation:
 Digit Shorthands
 ~~~~~~~~~~~~~~~~
 
-.. ansi-block::
+.. tagscript::
 
-    [1;31m{[1;37m1[1;31m}[1;37m
-    [1;31m{[1;37m2[1;31m}[1;37m
-    [1;31m{[1;37m3[1;31m}[1;37m etc.
+    {1}
+    {2}
+    {3} etc.
 
 The main difference between args and message is how message has digit shorthands.
 
-.. ansi-block::
+.. tagscript::
 
-    [1;31m{[1;32margs[1;34m([1;37m1[1;34m)[1;31m}[1;37m is equivalent to [1;31m{[1;37m1[1;31m}[1;37m
-    [1;31m{[1;32margs[1;34m([1;37m2[1;34m)[1;31m}[1;37m is equvalent to [1;31m{[1;37m2[1;31m}[1;37m
+    {args(1)} is equivalent to {1}
+    {args(2)} is equvalent to {2}
 
 However digit shorthands are based upon the message variable, meaning if you change it, by redefining it, digit shorthands will now be based on that instead.
 

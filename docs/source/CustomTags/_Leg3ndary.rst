@@ -10,104 +10,104 @@ Suspicion Command
 
 Check for alts using a system of checks with each being given their own weight, in addition see other info about the user to manually determine if a user is "sus".
 
-.. ansi-block::
-    [1;31m{[1;32m=[1;34m([1;37mud.seconds.points[1;34m)[1;34m:[1;37m3[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age is under 24 hours old[1;33m,[1;37m usually an alt MAKE THIS THE BIGGEST NUMBER[1;31m}[1;37m
-    [1;31m{[1;32m=[1;34m([1;37mud.minutes.points[1;34m)[1;34m:[1;37m2[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age is 1[1;31m-[1;37m30 days old[1;33m,[1;37m could be an alt would recommend keeping an eye on the user[1;31m}[1;37m
-    [1;31m{[1;32m=[1;34m([1;37mud.hours.points[1;34m)[1;34m:[1;37m1[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age is 1[1;31m-[1;37m12 months old[1;33m,[1;37m again could be an alt but not likely[1;31m}[1;37m
-    [1;31m{[1;32m=[1;34m([1;37mud.days.points[1;34m)[1;34m:[1;37m0[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age is 1[1;31m+[1;37m years old[1;33m,[1;37m most likely not an alt but could be one[1;31m}[1;37m
-    [1;31m{[1;32m=[1;34m([1;37mujd.seconds.points[1;34m)[1;34m:[1;37m2[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age in server is under 24 hours old[1;33m,[1;37m new memberMAKE THIS THE BIGGEST NUMBER[1;31m}[1;37m
-    [1;31m{[1;32m=[1;34m([1;37mujd.minutes.points[1;34m)[1;34m:[1;37m1[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age in server is 1[1;31m-[1;37m30 days old[1;33m,[1;37m not a new member but not really an old member[1;31m}[1;37m
-    [1;31m{[1;32m=[1;34m([1;37mujd.hours.points[1;34m)[1;34m:[1;37m0[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age in server is 1[1;31m-[1;37m12 months old[1;33m,[1;37m would be considered seasoned or at least an old member[1;31m}[1;37m
-    [1;31m{[1;32m=[1;34m([1;37mujd.days.points[1;34m)[1;34m:[1;37m0[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age in the server is 1[1;31m+[1;37m years old[1;33m,[1;37m old member[1;31m}[1;37m
-    [1;31m{[1;32m=[1;34m([1;37mua.default.points[1;34m)[1;34m:[1;37m3[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mIs the users avatar a default one? Most alts don't change pfps which is a dead giveaway[1;31m}[1;37m
-    [1;31m{[1;32m=[1;34m([1;37mua.nitro.points[1;34m)[1;34m:[1;31m-[1;37m1[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mDoes the user have a .gif avatar? Not many people have nitro for an alt[1;34m([1;37ms[1;34m)[1;37m Negative number here because user has nitro[1;31m}[1;37m
-    [1;31m{[1;32m=[1;34m([1;37mun.points[1;34m)[1;34m:[1;37m1[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37m Has the user changed his[1;31m/[1;37mher nickname? Alts don't usually change their nickname[1;33m,[1;37m Disable this with "0" if needed[1;31m}[1;37m
+.. tagscript::
+    {=(ud.seconds.points):3} {=(README):Users account age is under 24 hours old, usually an alt MAKE THIS THE BIGGEST NUMBER}
+    {=(ud.minutes.points):2} {=(README):Users account age is 1-30 days old, could be an alt would recommend keeping an eye on the user}
+    {=(ud.hours.points):1} {=(README):Users account age is 1-12 months old, again could be an alt but not likely}
+    {=(ud.days.points):0} {=(README):Users account age is 1+ years old, most likely not an alt but could be one}
+    {=(ujd.seconds.points):2} {=(README):Users account age in server is under 24 hours old, new memberMAKE THIS THE BIGGEST NUMBER}
+    {=(ujd.minutes.points):1} {=(README):Users account age in server is 1-30 days old, not a new member but not really an old member}
+    {=(ujd.hours.points):0} {=(README):Users account age in server is 1-12 months old, would be considered seasoned or at least an old member}
+    {=(ujd.days.points):0} {=(README):Users account age in the server is 1+ years old, old member}
+    {=(ua.default.points):3} {=(README):Is the users avatar a default one? Most alts don't change pfps which is a dead giveaway}
+    {=(ua.nitro.points):-1} {=(README):Does the user have a .gif avatar? Not many people have nitro for an alt(s) Negative number here because user has nitro}
+    {=(un.points):1} {=(README): Has the user changed his/her nickname? Alts don't usually change their nickname, Disable this with "0" if needed}
 
 .. dropdown:: Source Code
 
-    .. ansi-block::
+    .. tagscript::
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37m Change the prefix and the recommended action taken if needed[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mtag.prefix[1;34m)[1;34m:[1;32m?[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mpreset.punishment[1;34m)[1;34m:[1;37mwarn[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mpreset.reason[1;34m)[1;34m:[1;37mPlease don't use alts as they are against our rules.[1;31m}[1;37m
+        {=(COMMENT): Change the prefix and the recommended action taken if needed}
+        {=(tag.prefix):?}
+        {=(preset.punishment):warn}
+        {=(preset.reason):Please don't use alts as they are against our rules.}
 
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37m None of these should be changed unless you k[4;36mnow[1;37m what your doing and even then not really needed basically finds the basic vars you need and sets a var with all the default variable avatars[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37muser.days[1;34m)[1;34m:[1;31m{[1;32mtd[1;34m:[1;31m{[1;32mtarget[1;34m([1;35mcreated_at[1;34m)[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37muser.join.days[1;34m)[1;34m:[1;31m{[1;32mtd[1;34m:[1;31m{[1;32mtarget[1;34m([1;35mjoined_at[1;34m)[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mdefault.avatars[1;34m)[1;34m:[1;37mhttps[1;34m:[1;31m/[1;31m/[1;37mcdn.discordapp.com[1;31m/[1;37membed[1;31m/[1;37mavatars[1;31m/[1;37m0.png https[1;34m:[1;31m/[1;31m/[1;37mcdn.discordapp.com[1;31m/[1;37membed[1;31m/[1;37mavatars[1;31m/[1;37m1.png https[1;34m:[1;31m/[1;31m/[1;37mcdn.discordapp.com[1;31m/[1;37membed[1;31m/[1;37mavatars[1;31m/[1;37m2.png https[1;34m:[1;31m/[1;31m/[1;37mcdn.discordapp.com[1;31m/[1;37membed[1;31m/[1;37mavatars[1;31m/[1;37m3.png https[1;34m:[1;31m/[1;31m/[1;37mcdn.discordapp.com[1;31m/[1;37membed[1;31m/[1;37mavatars[1;31m/[1;37m4.png[1;31m}[1;37m
+        {=(COMMENT): None of these should be changed unless you know what your doing and even then not really needed basically finds the basic vars you need and sets a var with all the default variable avatars}
+        {=(user.days):{td:{target(created_at)}}}
+        {=(user.join.days):{td:{target(joined_at)}}}
+        {=(default.avatars):https://cdn.discordapp.com/embed/avatars/0.png https://cdn.discordapp.com/embed/avatars/1.png https://cdn.discordapp.com/embed/avatars/2.png https://cdn.discordapp.com/embed/avatars/3.png https://cdn.discordapp.com/embed/avatars/4.png}
 
-        [1;31m{[1;32m=[1;34m([1;37mComment[1;34m)[1;34m:[1;37m This is a limiter to prevent the embed from breaking change it to increase the number of roles seen[1;31m-[1;37mor decrease it[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mlimiter[1;34m)[1;34m:[1;37m15[1;31m}[1;37m 
-        [1;31m{[1;32m=[1;34m([1;37muser.roleids.sub[1;34m)[1;34m:[1;31m{[1;32mtarget[1;34m([1;35mroleids[1;34m)[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37muser.roleids.stuff[1;34m)[1;34m:[1;31m{[1;32mindex[1;34m([1;37mabc[1;34m)[1;34m:[1;31m{[1;32mtarget[1;34m([1;35mroleids[1;34m)[1;31m}[1;37m abc[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37muser.roleids.stuff[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32muser[1;37m.roleids.stuff[1;31m}[1;35m>[1;31m{[1;37mlimiter[1;31m}[1;34m)[1;34m:[1;31m{[1;32mreplace[1;34m([1;31m{[1;32muser[1;37m.roleids.sub[1;34m([1;31m+[1;31m{[1;37mm[1;34m:[1;35mtrunc[1;34m([1;31m{[1;32muser[1;37m.roleids.stuff[1;31m}[1;31m-[1;31m{[1;37mlimiter[1;31m}[1;34m)[1;31m}[1;34m)[1;31m}[1;33m,[1;34m)[1;34m:[1;31m{[1;32mtarget[1;34m([1;35mroleids[1;34m)[1;31m}[1;35m|[1;31m{[1;32mtarget[1;34m([1;35mroleids[1;34m)[1;31m}[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37muser.roleids.ping[1;34m)[1;34m:[1;35m<[1;37m@&[1;31m{[1;32mreplace[1;34m([1;37m [1;33m,[1;35m>[1;37m [1;35m<[1;37m@&[1;34m)[1;34m:[1;31m{[1;32muser[1;37m.roleids.stuff[1;31m}[1;35m>[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37muser.roleids.ping[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32muser[1;37m.roleids.ping[1;31m}[1;35m==[1;35m<[1;37m@&[1;35m>[1;34m)[1;34m:[1;37mNone[1;35m|[1;31m{[1;32mreplace[1;34m([1;35m<[1;37m@&[1;35m>[1;33m,[1;34m)[1;34m:[1;31m{[1;32muser[1;37m.roleids.ping[1;31m}[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37muser.roleids.list[1;34m)[1;34m:[1;31m{[1;32mtarget[1;34m([1;35mroleids[1;34m)[1;31m}[1;31m}[1;37m
+        {=(Comment): This is a limiter to prevent the embed from breaking change it to increase the number of roles seen-or decrease it}
+        {=(limiter):15} 
+        {=(user.roleids.sub):{target(roleids)}}
+        {=(user.roleids.stuff):{index(abc):{target(roleids)} abc}}
+        {=(user.roleids.stuff):{if({user.roleids.stuff}>{limiter}):{replace({user.roleids.sub(+{m:trunc({user.roleids.stuff}-{limiter})})},):{target(roleids)}|{target(roleids)}}}}
+        {=(user.roleids.ping):<@&{replace( ,> <@&):{user.roleids.stuff}>}}
+        {=(user.roleids.ping):{if({user.roleids.ping}==<@&>):None|{replace(<@&>,):{user.roleids.ping}}}}
+        {=(user.roleids.list):{target(roleids)}}
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37mSets the sus.score to 0 so that it can calculate the later values in this command[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;37m0[1;31m}[1;37m 
+        {=(COMMENT):Sets the sus.score to 0 so that it can calculate the later values in this command}
+        {=(sus.score):0} 
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37m THIS IS THE POINTS SYSTEM[1;33m,[1;37m IT IS ESSENTIAL YOU READ AND UNDERSTAND THIS[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37m This determines what level suspicion the user has[1;33m,[1;37m the bigger the number the more suspicion 0 means nothing and it won't affect the final variable itself[1;33m,[1;37m use that to disable parts of the command[1;33m,[1;37m you can have values with negatives to make the suspicion score smaller [1;34m([1;37mwill make the final score less sus[1;34m)[1;37m more is explained about it beside the var itself[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mud.seconds.points[1;34m)[1;34m:[1;37m3[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age is under 24 hours old[1;33m,[1;37m usually an alt MAKE THIS THE BIGGEST NUMBER[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mud.minutes.points[1;34m)[1;34m:[1;37m2[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age is 1[1;31m-[1;37m30 days old[1;33m,[1;37m could be an alt would recommend keeping an eye on the user[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mud.hours.points[1;34m)[1;34m:[1;37m1[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age is 1[1;31m-[1;37m12 months old[1;33m,[1;37m again could be an alt but not likely[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mud.days.points[1;34m)[1;34m:[1;37m0[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age is 1[1;31m+[1;37m years old[1;33m,[1;37m most likely not an alt but could be one[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mujd.seconds.points[1;34m)[1;34m:[1;37m2[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age in server is under 24 hours old[1;33m,[1;37m new memberMAKE THIS THE BIGGEST NUMBER[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mujd.minutes.points[1;34m)[1;34m:[1;37m1[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age in server is 1[1;31m-[1;37m30 days old[1;33m,[1;37m not a new member but not really an old member[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mujd.hours.points[1;34m)[1;34m:[1;37m0[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age in server is 1[1;31m-[1;37m12 months old[1;33m,[1;37m would be considered seasoned or at least an old member[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mujd.days.points[1;34m)[1;34m:[1;37m0[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mUsers account age in the server is 1[1;31m+[1;37m years old[1;33m,[1;37m old member[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mua.default.points[1;34m)[1;34m:[1;37m3[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mIs the users avatar a default one? Most alts don't change pfps which is a dead giveaway[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mua.nitro.points[1;34m)[1;34m:[1;31m-[1;37m1[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37mDoes the user have a .gif avatar? Not many people have nitro for an alt[1;34m([1;37ms[1;34m)[1;37m Negative number here because user has nitro[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mun.points[1;34m)[1;34m:[1;37m1[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37m Has the user changed his[1;31m/[1;37mher nickname? Alts don't usually change their nickname[1;33m,[1;37m Disable this with "0" if needed[1;31m}[1;37m
+        {=(COMMENT): THIS IS THE POINTS SYSTEM, IT IS ESSENTIAL YOU READ AND UNDERSTAND THIS}
+        {=(COMMENT): This determines what level suspicion the user has, the bigger the number the more suspicion 0 means nothing and it won't affect the final variable itself, use that to disable parts of the command, you can have values with negatives to make the suspicion score smaller (will make the final score less sus) more is explained about it beside the var itself}
+        {=(ud.seconds.points):3} {=(README):Users account age is under 24 hours old, usually an alt MAKE THIS THE BIGGEST NUMBER}
+        {=(ud.minutes.points):2} {=(README):Users account age is 1-30 days old, could be an alt would recommend keeping an eye on the user}
+        {=(ud.hours.points):1} {=(README):Users account age is 1-12 months old, again could be an alt but not likely}
+        {=(ud.days.points):0} {=(README):Users account age is 1+ years old, most likely not an alt but could be one}
+        {=(ujd.seconds.points):2} {=(README):Users account age in server is under 24 hours old, new memberMAKE THIS THE BIGGEST NUMBER}
+        {=(ujd.minutes.points):1} {=(README):Users account age in server is 1-30 days old, not a new member but not really an old member}
+        {=(ujd.hours.points):0} {=(README):Users account age in server is 1-12 months old, would be considered seasoned or at least an old member}
+        {=(ujd.days.points):0} {=(README):Users account age in the server is 1+ years old, old member}
+        {=(ua.default.points):3} {=(README):Is the users avatar a default one? Most alts don't change pfps which is a dead giveaway}
+        {=(ua.nitro.points):-1} {=(README):Does the user have a .gif avatar? Not many people have nitro for an alt(s) Negative number here because user has nitro}
+        {=(un.points):1} {=(README): Has the user changed his/her nickname? Alts don't usually change their nickname, Disable this with "0" if needed}
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37mChecking and determining how old the account is and then adding sus points based on it[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32min[1;34m([1;37mseconds ago[1;34m)[1;34m:[1;31m{[1;32muser[1;37m.days[1;31m}[1;31m}[1;35m==[4;36mtrue[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mud.seconds.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32min[1;34m([1;37mminutes ago[1;34m)[1;34m:[1;31m{[1;32muser[1;37m.days[1;31m}[1;31m}[1;35m==[4;36mtrue[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mud.minutes.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32min[1;34m([1;37mhours ago[1;34m)[1;34m:[1;31m{[1;32muser[1;37m.days[1;31m}[1;31m}[1;35m==[4;36mtrue[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mud.hours.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32min[1;34m([1;37mdays ago[1;34m)[1;34m:[1;31m{[1;32muser[1;37m.days[1;31m}[1;31m}[1;35m==[4;36mtrue[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mud.days.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
+        {=(COMMENT):Checking and determining how old the account is and then adding sus points based on it}
+        {=(sus.score):{if({in(seconds ago):{user.days}}==true):{m:{sus.score}+{ud.seconds.points}}|{sus.score}}}
+        {=(sus.score):{if({in(minutes ago):{user.days}}==true):{m:{sus.score}+{ud.minutes.points}}|{sus.score}}}
+        {=(sus.score):{if({in(hours ago):{user.days}}==true):{m:{sus.score}+{ud.hours.points}}|{sus.score}}}
+        {=(sus.score):{if({in(days ago):{user.days}}==true):{m:{sus.score}+{ud.days.points}}|{sus.score}}}
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37mSame as above except its checking account age in the server or how long he[1;31m/[1;37mshe has been in the server[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32min[1;34m([1;37mseconds ago[1;34m)[1;34m:[1;31m{[1;32muser[1;37m.join.days[1;31m}[1;31m}[1;35m==[4;36mtrue[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mujd.seconds.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32min[1;34m([1;37mminutes ago[1;34m)[1;34m:[1;31m{[1;32muser[1;37m.join.days[1;31m}[1;31m}[1;35m==[4;36mtrue[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mujd.minutes.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32min[1;34m([1;37mhours ago[1;34m)[1;34m:[1;31m{[1;32muser[1;37m.join.days[1;31m}[1;31m}[1;35m==[4;36mtrue[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mujd.hours.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32min[1;34m([1;37mdays ago[1;34m)[1;34m:[1;31m{[1;32muser[1;37m.join.days[1;31m}[1;31m}[1;35m==[4;36mtrue[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mujd.days.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
+        {=(COMMENT):Same as above except its checking account age in the server or how long he/she has been in the server}
+        {=(sus.score):{if({in(seconds ago):{user.join.days}}==true):{m:{sus.score}+{ujd.seconds.points}}|{sus.score}}}
+        {=(sus.score):{if({in(minutes ago):{user.join.days}}==true):{m:{sus.score}+{ujd.minutes.points}}|{sus.score}}}
+        {=(sus.score):{if({in(hours ago):{user.join.days}}==true):{m:{sus.score}+{ujd.hours.points}}|{sus.score}}}
+        {=(sus.score):{if({in(days ago):{user.join.days}}==true):{m:{sus.score}+{ujd.days.points}}|{sus.score}}}
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37m Checking if the user has a nitro pfp or if its just a regular default pfp in addition we'll check the discriminator as if it has a 1111 or 0001 or something like that we k[4;36mnow[1;37m they probably changed it and has nitro[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32min[1;34m([1;31m{[1;32mtarget[1;34m([1;35mavatar[1;34m)[1;31m}[1;34m)[1;34m:[1;31m{[1;37mdefault.avatars[1;31m}[1;31m}[1;35m==[4;36mtrue[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mua.default.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32min[1;34m([1;37m.gif[1;34m)[1;34m:[1;31m{[1;32mtarget[1;34m([1;35mavatar[1;34m)[1;31m}[1;31m}[1;35m==[4;36mtrue[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mua.nitro.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37m This list below is what we'll be checking... Edit as you please it will also check if we've determined he[1;31m/[1;37mshe already has nitro so we don't double it up[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.discrim[1;34m)[1;34m:[1;37m0001 0002 0003 0004 0005 0006 0007 0008 0009 1111 2222 3333 4444 5555 6666 7777 8888 9999 2020 2021 1000 2000 3000 4000 5000 6000 7000 8000 9000[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mand[1;34m([1;31m{[1;32mcontains[1;34m([1;31m{[1;32mreplace[1;34m([1;31m{[1;32muser[1;34m([1;35mname[1;34m)[1;31m}[1;37m#[1;33m,[1;34m)[1;34m:[1;31m{[1;32muser[1;34m([1;35mproper[1;34m)[1;31m}[1;31m}[1;34m)[1;34m:[1;31m{[1;37msus.discrim[1;31m}[1;31m}[1;35m==[4;36mtrue[1;35m|[1;31m{[1;32min[1;34m([1;37m.gif[1;34m)[1;34m:[1;31m{[1;32mtarget[1;34m([1;35mavatar[1;34m)[1;31m}[1;31m}[1;35m==[4;36mfalse[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mua.nitro.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
+        {=(COMMENT): Checking if the user has a nitro pfp or if its just a regular default pfp in addition we'll check the discriminator as if it has a 1111 or 0001 or something like that we know they probably changed it and has nitro}
+        {=(sus.score):{if({in({target(avatar)}):{default.avatars}}==true):{m:{sus.score}+{ua.default.points}}|{sus.score}}}
+        {=(sus.score):{if({in(.gif):{target(avatar)}}==true):{m:{sus.score}+{ua.nitro.points}}|{sus.score}}}
+        {=(COMMENT): This list below is what we'll be checking... Edit as you please it will also check if we've determined he/she already has nitro so we don't double it up}
+        {=(sus.discrim):0001 0002 0003 0004 0005 0006 0007 0008 0009 1111 2222 3333 4444 5555 6666 7777 8888 9999 2020 2021 1000 2000 3000 4000 5000 6000 7000 8000 9000}
+        {=(sus.score):{and({contains({replace({user(name)}#,):{user(proper)}}):{sus.discrim}}==true|{in(.gif):{target(avatar)}}==false):{m:{sus.score}+{ua.nitro.points}}|{sus.score}}}
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37mHas the user changed his or her name since joining? Again you can disable this if you want by changing un.points to 0[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32mtarget[1;31m}[1;35m==[1;31m{[1;32mtarget[1;34m([1;35mname[1;34m)[1;31m}[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m+[1;31m{[1;37mun.points[1;31m}[1;31m}[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m
+        {=(COMMENT):Has the user changed his or her name since joining? Again you can disable this if you want by changing un.points to 0}
+        {=(sus.score):{if({target}=={target(name)}):{m:{sus.score}+{un.points}}|{sus.score}}}
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37mChecking how many roles the user has[1;33m,[1;37m had a problem if the user had 1 or 0 roles would output 0 no matter what so the bottom block checks if its 1 or 0 and changes the above value to the correct one[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37muser.roleids.number[1;34m)[1;34m:[1;31m{[1;32mindex[1;34m([1;37m$$$[1;34m)[1;34m:[1;31m{[1;31m{[1;32mtarget[1;34m([1;35mroleids[1;34m)[1;31m}[1;31m}[1;37m $$$[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37muser.roleids.number[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32muser[1;37m.roleids.list[1;34m([1;37m1[1;34m)[1;31m}[1;35m==[1;31m{[1;32muser[1;37m.roleids.list[1;34m([1;37m2[1;34m)[1;31m}[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32muser[1;37m.roleids.list[1;34m([1;37m1[1;34m)[1;31m}[1;35m==[1;34m)[1;34m:[1;37m0[1;35m|[1;37m1[1;31m}[1;35m|[1;31m{[1;32muser[1;37m.roleids.number[1;31m}[1;31m}[1;31m}[1;37m
+        {=(COMMENT):Checking how many roles the user has, had a problem if the user had 1 or 0 roles would output 0 no matter what so the bottom block checks if its 1 or 0 and changes the above value to the correct one}
+        {=(user.roleids.number):{index($$$):{{target(roleids)}} $$$}}
+        {=(user.roleids.number):{if({user.roleids.list(1)}=={user.roleids.list(2)}):{if({user.roleids.list(1)}==):0|1}|{user.roleids.number}}}
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37mTaking all the scores checking if there negative and then adding if they aren't This determines the final percentage and embed color which is why you must follow the points system correctly [1;31m^[1;37m find above[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mtotal.score[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;37mm[1;34m:[1;37msgn[1;34m([1;31m{[1;37mud.seconds.points[1;31m}[1;34m)[1;31m}[1;35m==[1;31m-[1;37m1[1;34m)[1;34m:[1;37m0[1;35m|[1;31m{[1;37mud.seconds.points[1;31m}[1;31m}[1;31m+[1;31m{[1;33mif[1;34m([1;31m{[1;37mm[1;34m:[1;37msgn[1;34m([1;31m{[1;37mujd.seconds.points[1;31m}[1;34m)[1;31m}[1;35m==[1;31m-[1;37m1[1;34m)[1;34m:[1;37m0[1;35m|[1;31m{[1;37mujd.seconds.points[1;31m}[1;31m}[1;31m+[1;31m{[1;33mif[1;34m([1;31m{[1;37mm[1;34m:[1;37msgn[1;34m([1;31m{[1;37mua.default.points[1;31m}[1;34m)[1;31m}[1;35m==[1;31m-[1;37m1[1;34m)[1;34m:[1;37m0[1;35m|[1;31m{[1;37mua.default.points[1;31m}[1;31m}[1;31m+[1;31m{[1;33mif[1;34m([1;31m{[1;37mm[1;34m:[1;37msgn[1;34m([1;31m{[1;37mua.nitro.points[1;31m}[1;34m)[1;31m}[1;35m==[1;31m-[1;37m1[1;34m)[1;34m:[1;37m0[1;35m|[1;31m{[1;37mua.nitro.points[1;31m}[1;31m}[1;31m+[1;31m{[1;33mif[1;34m([1;31m{[1;37mm[1;34m:[1;37msgn[1;34m([1;31m{[1;37mun.points[1;31m}[1;34m)[1;31m}[1;35m==[1;31m-[1;37m1[1;34m)[1;34m:[1;37m0[1;35m|[1;31m{[1;37mun.points[1;31m}[1;31m}[1;31m}[1;31m}[1;37m
+        {=(COMMENT):Taking all the scores checking if there negative and then adding if they aren't This determines the final percentage and embed color which is why you must follow the points system correctly ^ find above}
+        {=(total.score):{m:{if({m:sgn({ud.seconds.points})}==-1):0|{ud.seconds.points}}+{if({m:sgn({ujd.seconds.points})}==-1):0|{ujd.seconds.points}}+{if({m:sgn({ua.default.points})}==-1):0|{ua.default.points}}+{if({m:sgn({ua.nitro.points})}==-1):0|{ua.nitro.points}}+{if({m:sgn({un.points})}==-1):0|{un.points}}}}
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37mFinally determining the percentage since truncate can't cut of to a certain decimal it multiplies by 10000 then truncates and divides by 100 which gives it the decimal[1;33m,[1;37m this could be in one block but I've left it to multiple so you can edit[1;31m/[1;37mbetter understand it[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m/[1;31m{[1;37mtotal.score[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;32mtarget[1;34m([1;35mproper[1;34m)[1;31m}[1;35m==[1;31m{[1;32mserver[1;34m([1;35mowner[1;34m)[1;31m}[1;34m)[1;34m:[1;37m0.00[1;35m|[1;31m{[1;37msus.score[1;31m}[1;31m}[1;31m}[1;37m [1;31m{[1;32m=[1;34m([1;37mREADME[1;34m)[1;34m:[1;37m Just checking if the person is the owner[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m*[1;37m10000[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;35mtrunc[1;34m([1;31m{[1;37msus.score[1;31m}[1;34m)[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37msus.score[1;34m)[1;34m:[1;31m{[1;37mm[1;34m:[1;31m{[1;37msus.score[1;31m}[1;31m/[1;37m100[1;31m}[1;31m}[1;37m
+        {=(COMMENT):Finally determining the percentage since truncate can't cut of to a certain decimal it multiplies by 10000 then truncates and divides by 100 which gives it the decimal, this could be in one block but I've left it to multiple so you can edit/better understand it}
+        {=(sus.score):{m:{sus.score}/{total.score}}}
+        {=(sus.score):{if({target(proper)}=={server(owner)}):0.00|{sus.score}}} {=(README): Just checking if the person is the owner}
+        {=(sus.score):{m:{sus.score}*10000}}
+        {=(sus.score):{m:trunc({sus.score})}}
+        {=(sus.score):{m:{sus.score}/100}}
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37mEmbed color[1;33m,[1;37m don't touch if you don't k[4;36mnow[1;37m how it works[1;33m,[1;37m if you want to have just one color change the bottom block with the hex you want[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37membed.color[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;37msus.score[1;31m}[1;35m<=[1;37m20.001[1;34m)[1;34m:[1;37m7ED321[1;35m|[1;31m{[1;33mif[1;34m([1;31m{[1;37msus.score[1;31m}[1;35m<=[1;37m40.001[1;34m)[1;34m:[1;37mBBDD1F[1;35m|[1;31m{[1;33mif[1;34m([1;31m{[1;37msus.score[1;31m}[1;35m<=[1;37m60.001[1;34m)[1;34m:[1;37mF8E71C[1;35m|[1;31m{[1;33mif[1;34m([1;31m{[1;37msus.score[1;31m}[1;35m<=[1;37m80.001[1;34m)[1;34m:[1;37mE4751C[1;35m|[1;37mD0021B[1;31m}[1;31m}[1;31m}[1;31m}[1;31m}[1;37m
-        [1;31m{[1;32membed[1;34m([1;35mcolor[1;34m)[1;34m:[1;32m#[1;31m{[1;32membed[1;37m.color[1;31m}[1;31m}[1;37m
+        {=(COMMENT):Embed color, don't touch if you don't know how it works, if you want to have just one color change the bottom block with the hex you want}
+        {=(embed.color):{if({sus.score}<=20.001):7ED321|{if({sus.score}<=40.001):BBDD1F|{if({sus.score}<=60.001):F8E71C|{if({sus.score}<=80.001):E4751C|D0021B}}}}}
+        {embed(color):#{embed.color}}
 
-        [1;31m{[1;32m=[1;34m([1;37mCOMMENT[1;34m)[1;34m:[1;37mThe final punishment if recommended[1;31m}[1;37m
-        [1;31m{[1;32m=[1;34m([1;37mpreset.punishment.final[1;34m)[1;34m:[1;31m{[1;33mif[1;34m([1;31m{[1;37msus.score[1;31m}[1;35m>=[1;37m90.001[1;34m)[1;34m:[1;37mMost likely an alt[1;33m,[1;37m command to [1;31m{[1;37mpreset.punishment[1;31m}[1;34m:[1;37m ```
-        [1;31m{[1;37mtag.prefix[1;31m}[1;31m{[1;37mpreset.punishment[1;31m}[1;37m [1;31m{[1;32mtarget[1;34m([1;35mid[1;34m)[1;31m}[1;37m [1;31m{[1;37mpreset.reason[1;31m}[1;37m
-        ```[1;35m|[1;31m}[1;31m}[1;37m
+        {=(COMMENT):The final punishment if recommended}
+        {=(preset.punishment.final):{if({sus.score}>=90.001):Most likely an alt, command to {preset.punishment}: ```
+        {tag.prefix}{preset.punishment} {target(id)} {preset.reason}
+        ```|}}
 
 .. raw:: html
 

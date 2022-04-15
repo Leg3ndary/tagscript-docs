@@ -7,11 +7,11 @@ Commands
 
     Remember to use blanks ADD LINK HERE PLEASE
 
-.. ansi-block::
+.. tagscript::
 
-    [1;31m{[1;37mc[1;34m:[1;37mCommand[1;31m}[1;37m
-    [1;31m{[1;37mcmd[1;34m:[1;37mrole add _Leg3ndary Red[1;31m}[1;37m
-    [1;31m{[1;37mcommand[1;34m:[1;37mban Carl[1;31m-[1;37mbot Useless bot[1;31m}[1;37m
+    {c:Command}
+    {cmd:role add _Leg3ndary Red}
+    {command:ban Carl-bot Useless bot}
 
 Command blocks execute Carl's commands, it's what allows you to add roles, change nicknames, etc.
 
@@ -22,21 +22,21 @@ Command blocks execute Carl's commands, it's what allows you to add roles, chang
 Payload
 -------
 
-.. ansi-block::
+.. tagscript::
 
-    [1;31m{[1;37mc[1;34m:[1;37mCOMMAND YOU WANT TO RUN[1;31m}[1;37m
+    {c:COMMAND YOU WANT TO RUN}
 
 .. tip::
 
     If you want to create an alias for an existing command, it's as simple as creating a tag with the alias as it's name and adding a command block with args
 
-    .. ansi-block::
+    .. tagscript::
 
-        [1;31m{[1;37mc[1;34m:[1;37mCOMMAND NAME [1;31m{[1;32margs[1;31m}[1;31m}[1;37m
+        {c:COMMAND NAME {args}}
 
-        [1;31m{[1;37mc[1;34m:[1;37mmute [1;31m{[1;32margs[1;31m}[1;31m}[1;37m
+        {c:mute {args}}
 
-        [1;31m{[1;37mc[1;34m:[1;37mban [1;31m{[1;32margs[1;31m}[1;31m}[1;37m
+        {c:ban {args}}
 
 .. warning::
 

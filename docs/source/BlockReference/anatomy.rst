@@ -20,11 +20,11 @@ Block names are what's inside the curly brackets, these will always be the first
 
 Some examples include:
 
-.. ansi-block::
+.. tagscript::
 
-    [1;31m{[1;32muser[1;31m}[1;37m
-    [1;31m{[1;32mcommand[1;31m}[1;37m
-    [1;31m{[1;32mlet[1;31m}[1;37m
+    {user}
+    {command}
+    {let}
 
 The name of the block will determine how the parameters and payload are evaluated.
 
@@ -36,11 +36,11 @@ Parameters
 
 Parameters will be defined straight after the block name ``{block(PARAMETERS)}``, parameters will usually let us alter the payload depending on what we put in it.
 
-.. ansi-block::
+.. tagscript::
 
-    [1;31m{[1;32muser[1;34m([1;37mPARAMETERS[1;34m)[1;31m}[1;37m
-    [1;31m{[1;37mcommand[1;34m([1;37mPARAMETERS[1;34m)[1;31m}[1;37m
-    [1;31m{[1;32mlet[1;34m([1;37mPARAMETERS[1;34m)[1;31m}[1;37m
+    {user(PARAMETERS)}
+    {command(PARAMETERS)}
+    {let(PARAMETERS)}
 
 .. warning::
 
@@ -51,10 +51,10 @@ Payloads
 
 Payloads will also be defined after the command name using a ``:``, unless parameters were added, in that case, it will go straight after parameters instead. Payloads are the text that we want to alter/use.
 
-.. ansi-block::
+.. tagscript::
 
-    [1;31m{[1;32muser[1;34m([1;37mPARAMETERS[1;34m)[1;34m:[1;37mPAYLOAD[1;31m}[1;37m
-    [1;31m{[1;37mcommand[1;34m:[1;37mPAYLOAD[1;31m}[1;37m
+    {user(PARAMETERS):PAYLOAD}
+    {command:PAYLOAD}
 
 .. note::
 
@@ -69,25 +69,25 @@ Payloads will also be defined after the command name using a ``:``, unless param
 
     Remember that payloads and parameters can be optional, meaning all of these are possible with the right blocks.
 
-    .. ansi-block::
+    .. tagscript::
 
-        [1;31m{[1;37mblock[1;34m([1;37mPARAMETERS[1;34m)[1;31m}[1;37m
-        [1;31m{[1;37mblock[1;34m:[1;37mPAYLOAD[1;31m}[1;37m
-        [1;31m{[1;37mblock[1;34m([1;37mPARAMETERS[1;34m)[1;34m:[1;37mPAYLOAD[1;31m}[1;37m
+        {block(PARAMETERS)}
+        {block:PAYLOAD}
+        {block(PARAMETERS):PAYLOAD}
 
 Examples
 --------
 
-.. ansi-block::
+.. tagscript::
     
     The blocks' parameter in this case is "avatar"
-    [1;31m{[1;32muser[1;34m([1;35mavatar[1;34m)[1;31m}[1;37m
+    {user(avatar)}
 
     The blocks' payload in this case is "lock server"
-    [1;31m{[1;32mcommand[1;34m:[1;37mlock server[1;31m}[1;37m
+    {command:lock server}
 
-    The blocks' parameter here is "tagscript"[1;33m,[1;37m while the payload is "cool"  
-    [1;31m{[1;32mlet[1;34m([1;37mtagscript[1;34m)[1;34m:[1;37mcool[1;31m}[1;37m
+    The blocks' parameter here is "tagscript", while the payload is "cool"  
+    {let(tagscript):cool}
 
 .. important::
 

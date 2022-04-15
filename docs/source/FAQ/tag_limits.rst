@@ -10,7 +10,7 @@ You will not have access to loops in any way, there are a few exceptions, but in
 
 Examples of blocks that you can use that have loop-like features:
 
-.. ansi-block::
+.. tagscript::
 
     {replace}
     {join}
