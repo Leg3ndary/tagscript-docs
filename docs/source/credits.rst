@@ -3,7 +3,8 @@ Credits
 
 .. panels::
 
-    ---
+    --------------------------------
+
     :img-top: images/_Leg3ndary.png
 
     _Leg3ndary
@@ -14,7 +15,8 @@ Credits
     ++++++
     Pages: Link Here
 
-    ---
+    --------------------------------
+
     :img-top: images/default.png
     
     Default
@@ -25,11 +27,12 @@ Credits
     ++++++
     Add yourself if you've contributed!
 
-    ---
+    --------------------------------
+
     :img-top: images/Raffael.png
 
     Raffael
-    ^^^^^^^^
+    ^^^^^^^
 
     Previous Carl-bot Admin
 
