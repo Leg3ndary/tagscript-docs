@@ -32,6 +32,12 @@ Finally tagscript parsing is here, though there's not much to know `here <https:
 
             {=(Tagscript):Can go here}
 
+    This will generate the following
+
+    .. tagscript::
+
+        {=(Tagscript):Can go here}
+
 .. raw:: html
 
     <meta property="og:title" content="Tagscript Unofficial Docs" />
