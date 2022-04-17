@@ -31,7 +31,7 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
 
 .. tip::
 
-    If you just want a quick refresher on blocks, this tag will show you everything you need to know: `?tse <block> <https://carl.gg/t/204246>`_
+    If you just want a quick refresher on blocks, this tag will contains everything you need to know: `?tse <block> <https://carl.gg/t/204246>`_
 
 .. note::
 
