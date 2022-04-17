@@ -27,7 +27,7 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
         {=(sel):{if({contains({L1}):on off}==false):error|{template}}}
         {override}{{sel}}
 
-        - Raffael#1372's AFK Tag
+        Raffael#1372's AFK Tag
 
 .. tip::
 
