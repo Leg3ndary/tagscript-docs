@@ -40,10 +40,10 @@ Finally tagscript parsing is here, though there's not much to know `here <https:
 
 .. raw:: html
 
-    <meta property="og:title" content="Tagscript Unofficial Docs" />
+    <meta property="og:title" content="Contributing" />
     <meta property="og:type" content="Site Content" />
     <meta property="og:url" content="https://tagscript-docs.readthedocs.io/en/latest/index.html" />
-    <meta property="og:site_name" content="Contributors">
+    <meta property="og:site_name" content="Info">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
     <meta property="og:description" content="A guide on how to contribute to these docs" />
     <meta name="theme-color" content="#20bc9c">

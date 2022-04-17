@@ -42,8 +42,8 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
     :maxdepth: 0
     :hidden:
 
-    contributing
-    credits
+    info/contributing
+    info/credits
 
 .. toctree::
     :caption: Frequently Asked Questions
