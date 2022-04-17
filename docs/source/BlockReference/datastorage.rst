@@ -3,7 +3,7 @@ Data Storage/Variables
 
 .. note::
     
-    Tags cannot store data between invocations through regular means, you have other options though! See link (to blanks)
+    Tags cannot store data between invocations through regular means, you have other options though! See :doc:`here. </AdvancedConcepts/tag_saving>`
 
 .. tagscript::
 
@@ -33,10 +33,10 @@ After that, to call it, all you have to do is put brackets around the variables 
 
 .. raw:: html
 
-    <meta property="og:title" content="Tagscript Unofficial Docs" />
+    <meta property="og:title" content="Data Storage" />
     <meta property="og:type" content="Site Content" />
     <meta property="og:url" content="https://tagscript-docs.readthedocs.io/en/latest/index.html" />
-    <meta property="og:site_name" content="By _Leg3ndary#5759">
+    <meta property="og:site_name" content="Block Reference">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
-    <meta property="og:description" content="The unofficial but better docs for Carl-bots Tagscript, not affiliated with Botlabs or Carl-bot" />
-    <meta name="theme-color" content="#9C20BC">
+    <meta property="og:description" content="Variables Usage" />
+    <meta name="theme-color" content="#F8B47C">

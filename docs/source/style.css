@@ -3,6 +3,10 @@
     color: #ffffff;
 }
 
+.wy-nav-content {
+    max-width: 900px !important;
+}
+
 .ansi-bold {
     font-weight: bold;
 }
@@ -101,8 +105,4 @@
 
 .ansi-bg_white {
     background-color: #b2b2b2;
-}
-
-.wy-nav-content {
-    max-width: 1200px !important;
 }

@@ -138,10 +138,10 @@ When used without a parameter, the block will output the channel name
 
 .. raw:: html
 
-    <meta property="og:title" content="Tagscript Unofficial Docs" />
+    <meta property="og:title" content="Discord Objects" />
     <meta property="og:type" content="Site Content" />
     <meta property="og:url" content="https://tagscript-docs.readthedocs.io/en/latest/index.html" />
-    <meta property="og:site_name" content="By _Leg3ndary#5759">
+    <meta property="og:site_name" content="Block Reference">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
-    <meta property="og:description" content="The unofficial but better docs for Carl-bots Tagscript, not affiliated with Botlabs or Carl-bot" />
-    <meta name="theme-color" content="#9C20BC">
+    <meta property="og:description" content="Discord user, channel and server blocks" />
+    <meta name="theme-color" content="#F8B47C">

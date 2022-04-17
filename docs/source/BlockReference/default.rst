@@ -102,10 +102,10 @@ However digit shorthands are based upon the message variable, meaning if you cha
 
 .. raw:: html
 
-    <meta property="og:title" content="Tagscript Unofficial Docs" />
+    <meta property="og:title" content="Default Variables" />
     <meta property="og:type" content="Site Content" />
     <meta property="og:url" content="https://tagscript-docs.readthedocs.io/en/latest/index.html" />
-    <meta property="og:site_name" content="By _Leg3ndary#5759">
+    <meta property="og:site_name" content="Block Reference">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
-    <meta property="og:description" content="The unofficial but better docs for Carl-bots Tagscript, not affiliated with Botlabs or Carl-bot" />
-    <meta name="theme-color" content="#9C20BC">
+    <meta property="og:description" content="Default variables every tag will have" />
+    <meta name="theme-color" content="#F8B47C">
