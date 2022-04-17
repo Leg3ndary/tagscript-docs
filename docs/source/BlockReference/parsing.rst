@@ -78,7 +78,7 @@ Delimiters on their own don't do anything, you need to specify an element for th
         {=(url):{url(1):/}}
         {url}
 
-.. warn::
+.. warning::
 
     Just to reiterate ``{test_var:DELIMITER}`` won't do anything
 
