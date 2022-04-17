@@ -72,6 +72,7 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
     BlockReference/control
     BlockReference/datastorage
     BlockReference/parsing
+    BlockReference/embed
 
 .. toctree::
     :caption: Advanced Concepts
