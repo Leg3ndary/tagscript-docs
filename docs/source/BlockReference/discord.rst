@@ -144,4 +144,4 @@ When used without a parameter, the block will output the channel name
     <meta property="og:site_name" content="Block Reference">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
     <meta property="og:description" content="Discord user, channel and server blocks" />
-    <meta name="theme-color" content="#F8B47C">
+    <meta name="theme-color" content="#F62658">

@@ -108,4 +108,4 @@ However digit shorthands are based upon the message variable, meaning if you cha
     <meta property="og:site_name" content="Block Reference">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
     <meta property="og:description" content="Default variables every tag will have" />
-    <meta name="theme-color" content="#F8B47C">
+    <meta name="theme-color" content="#F62658">
