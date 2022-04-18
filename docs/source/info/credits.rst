@@ -7,6 +7,8 @@ Credits
 
 .. panels::
 
+    :header: text-center
+
     ---
     :img-top: images/_Leg3ndary.png
 
