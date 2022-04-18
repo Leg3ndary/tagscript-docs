@@ -39,7 +39,7 @@ operators_dict = {
 }
 
 blocks_dict = {
-    ">": "[1;35m>", # I know these 2 are operators, but so that everything get's parsed correctly they have to be here or another dict.
+    ">": "[1;35m>",  # I know these 2 are operators, but so that everything get's parsed correctly they have to be here or another dict.
     "<": "[1;35m<",
     "{=": "{[1;32m=",
     "{var": "{[1;32mvar",
@@ -75,7 +75,7 @@ blocks_dict = {
     "{in": "{[1;32min",
     "{upper": "{[1;32mupper",
     "{lower": "{[1;32mlower",
-    "{math": "{[1;32mmath", # regular math removed because it breaks a lot of things
+    "{math": "{[1;32mmath",  # regular math removed because it breaks a lot of things
     "{range": "{[1;32mrange",
     "{?": "{[1;32m?",
     "{rangef": "{[1;32mrangef",
@@ -250,11 +250,14 @@ strf_flags = {
     """%a %A %w %d %-d %b %B %m %-m %y %Y %H %-H %I %-I %p %M %-M %S %-S %f %z %Z %j %-j %U %W %c %x %X %u %n %i %s %m %-m %s %-s %z %w"""
 }
 
+
 def gen_tag_ansi(text: str) -> str:
     """Generates some tagscript ansi :)"""
 
     for key, value in operators_dict.items():
-        text = text.replace(key, f"{value}[1;37m") # not using concatenation for speed, im pre sure its supposed to be slower as it creates copies of the string to use
+        text = text.replace(
+            key, f"{value}[1;37m"
+        )  # not using concatenation for speed, im pre sure its supposed to be slower as it creates copies of the string to use
     text = text.replace("[1;37m[", "[")
 
     for key, value in blocks_dict.items():
@@ -276,12 +279,13 @@ def gen_tag_ansi(text: str) -> str:
     for key, value in final_operators_dict.items():
         text = text.replace(key, f"{value}[1;37m")
     text = text.replace("[1;37m[", "[")
-    
+
     for key, value in syntax_dict.items():
         text = text.replace(key, f"{value}[1;37m")
     text = text.replace("[1;37m[", "[")
 
     return text
+
 
 # literally just shit tons of replaces lol
 

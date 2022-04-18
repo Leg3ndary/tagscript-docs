@@ -22,9 +22,11 @@ SOFTWARE.
 
 import re
 
+
 def clear_ansi(code: str):
     """Clear ansi code because I'm a genius"""
     return re.sub("().{6}", "", code)
+
 
 with open("output.txt", "r") as text_file:
     code = text_file.read()

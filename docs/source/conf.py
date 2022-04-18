@@ -17,8 +17,8 @@ extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
-    "sphinxcontrib.tagscript", # my own ext :D so proud of myself
-    'sphinx_panels'
+    "sphinxcontrib.tagscript",
+    "sphinx_panels",
 ]
 
 intersphinx_mapping = {
