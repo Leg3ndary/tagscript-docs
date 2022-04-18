@@ -78,6 +78,9 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
     BlockReference/parsing
     BlockReference/embed
     BlockReference/manipulation
+    BlockReference/math
+    BlockReference/rng
+    BlockReference/time
 
 .. toctree::
     :caption: Advanced Concepts
