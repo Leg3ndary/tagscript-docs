@@ -88,7 +88,7 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
     :hidden:
 
     AdvancedConcepts/blanks
-    AdvancedConcepts/tag_saving
+    AdvancedConcepts/switches
 
 .. toctree::
     :caption: Custom Tags
