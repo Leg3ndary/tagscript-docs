@@ -1,6 +1,8 @@
 Blanks
 ======
 
+Blanks are how we conditionally run blocks, this is due to tagscript running all blocks first, and not checking wether they should actually be run (Conditional Statements).
+
 .. danger::
 
     Probably the hardest concept you'll ever have to learn in tagscript, most people give up here.
@@ -103,6 +105,27 @@ If you think you can explain blanks feel free to add a dropdown with your explan
     Finally we add a ``{=():}`` before it and we're done!
 
     This can be used for many blocks like: ``dm, redirect, require, blacklist, whitelist, del, silence, override`` basically anything that will affect the overall block itself just replace ``c:role add blah blah blah` with whatever block you want!``
+
+.. dropdown:: Asty's Second Explanation
+
+    **Deeper explanation about how to make any command/behavior block conditional using the Blank Variable** ``{=():}``
+
+    If you were to do ``{if(this==that):{c:echo {args}}}``, then the command block would execute no matter what, because you put the entire block and it's a behavior block, and will ignore the fact it is inside of an if block.
+
+    Note: All action/behavior blocks like react(u), delete, silence, override, require/blacklist, dm, embed etc. will execute no matter where they are, if you are not using the blank workaround.
+
+    The way to make command blocks conditional is to have the if block return our command block's content as text, and then this text when returned would be evaluated as an actual block thanks to the { and } around the if block.
+    When the condition evaluates to false, then the condition returns no text, so the entire block returns {}. This is where the blank variable {=():} comes in handy, as it would get called in that case and would return nothing. That's the workaround to allow you to execute a command block or any behavior block conditionally.
+
+    Essentially, we are doing {if(this==that):c:echo {args}}, which, when true is returned from the boolean equation (the check in the if block), returns the text c:echo {args}.
+    And now for it to actually become a block it should execute when the condition is met, we wrap all of that between { and }. When the if block returns false, since no text would be returned, then with the extra brackets around it would become {}, which, if you have a blank variable above it {=():}, would actually call this variable that has no name and no content, effectively doing nothing.
+
+    Becomes:
+    {=():}
+    {{if(this==that):c:echo {args}}}
+
+    Replace the condition with yours and the command you're willing to execute in the snippet above. Don't copy-paste it without understanding what it does.
+    You only need 1 {=():} in your code!
 
 .. raw:: html
 
