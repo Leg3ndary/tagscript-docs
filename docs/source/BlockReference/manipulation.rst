@@ -61,7 +61,7 @@ Urlencode will encode any text (Usually URLs obviously) into percent form. The o
     <meta property="og:title" content="Manipulation" />
     <meta property="og:type" content="Site Content" />
     <meta property="og:url" content="https://tagscript-docs.readthedocs.io/en/latest/index.html" />
-    <meta property="og:site_name" content="By _Leg3ndary#5759">
+    <meta property="og:site_name" content="Block Reference">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
     <meta property="og:description" content="Value manipulation, different from parsing" />
     <meta name="theme-color" content="#F62658">
