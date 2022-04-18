@@ -18,7 +18,7 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
 
 .. note::
     
-    All of this documentation contains custom tagscript syntax highlighting through ansi!
+    All of this documentation contains custom tagscript syntax highlighting through `tagscript-ansi <https://github.com/Leg3ndary/tagscript-ansi>`_
 
     .. tagscript::
 
@@ -87,6 +87,7 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
     :maxdepth: 5
     :hidden:
 
+    AdvancedConcepts/blanks
     AdvancedConcepts/tag_saving
 
 .. toctree::

@@ -1,9 +1,13 @@
 Credits
 =======
 
+.. note::
+
+    This page isn't complete
+
 .. panels::
 
-    --------------------------------
+    ---
 
     :img-top: images/_Leg3ndary.png
 
@@ -15,7 +19,7 @@ Credits
     ++++++
     Pages: Link Here
 
-    --------------------------------
+    ---
 
     :img-top: images/default.png
     
@@ -27,7 +31,7 @@ Credits
     ++++++
     Add yourself if you've contributed!
 
-    --------------------------------
+    ---
 
     :img-top: images/Raffael.png
 

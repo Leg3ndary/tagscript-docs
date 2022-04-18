@@ -5,12 +5,111 @@ Blanks
 
     Probably the hardest concept you'll ever have to learn in tagscript, most people give up here.
 
+There's so many different explanations on this I've just decided to pool them all here, take a stab at any of them.
+
+.. dropdown:: Asty (With GIF)
+
+    **What is that {=():} variable that you put in your code?**
+    
+    .. tagscript::
+
+        {=():}
+        {=(execution):{if({args}!=):c:echo Hello!}}
+        {{execution}}
+
+    In the simple example code above, if there is an argument, it will call the content of the execution variable, and because it has double brackets, it actually executes the command block.
+    
+    If there is no argument, the else of the conditional if block that's in execution would return nothing, but when we call it with double brackets, it would output ``{}`` as plain text and we don't want that.
+    
+    So to avoid that, we create a variable with no name and no content, that is being called when an else is blank.
+
+    **Most common usage (please use this instead of the above!)**
+
+    .. tagscript::
+
+        {=():}
+        {{if(boolean expression here):c:command here}}
+        Such as
+        {=():}
+        {{if(!={1}):c:echo Yay, you typed words: {args}}}
+    
+    The above example runs the echo command block only if there was at least an argument (if the first argument is not empty, rather).
+    
+    Reminder: ``The {=():}`` (blank variable) is there because otherwise when the condition evaluates to false, the line below it would return ``{}`` as plain text and would be outputted to the user, which we want to avoid.
+
+    .. image:: images/blankexample.gif
+        :width: 800
+        :alt: Not Loaded
+
+.. dropdown:: _Leg3ndary
+
+    **What Are Blanks**
+
+    Tagscript is largely different from any other programming languages...
+
+    When you have any block that will send or alter its behaviour for example command blocks
+
+    .. tagscript::
+        
+        eg {c:role add blah blah blah}
+
+    Normally you would do something like this
+    
+    .. tagscript::
+
+        {if(condition):{c:role add blah blah blah}}
+    
+    This will not work the c role will always add the role
+
+    **It will run no matter what**, no matter where you put it in the code, even if you put it in an `if` statement or in a `variable` it will still run. **TAGSCRUOT DOES NOT CARE**
+
+    So how do we stop this?
+
+    First we remove the brackets making it work
+
+    .. tagscript::
+        {if(condition):{c:role add blah blah blah}}
+        {if(condition):c:role add blah blah blah}
+
+    Notice now if we run it it will literally output `c:role add blah blah blah` but don't worry thats what we want!
+
+    Now all we have to do is actually allow carl to run it so we move it outside!
+
+    .. tagscript::
+
+        {if(condition):c:role add blah blah blah}
+        {{if(condition):c:role add blah blah blah}}
+
+    Now the command block will actually run because after outputting `c:role add blah blah blah` carl will add the brackets making it `{c:role add blah blah blah}`
+    
+    Now all you have to do is add a `{=():}`, this will make it so when the condition fails instead of saying {} it will just say nothing.
+
+    Lets do one more example, I want to dm the command if no arguments are present:
+    
+    Normally a person would do this:
+
+    .. tagscript::
+
+        {if(=={args}):{dm}}
+
+    But now knowing what we have to do lets fix this!
+
+    .. tagscript::
+
+        {if(=={args}):{dm}}
+        {if(=={args}):dm} first we remove the brackets!
+        {{if(=={args}):dm}} now we add them aroudn the outside
+    
+    Finally we add a `{=():}` before it and we're done!
+
+    This can be used for many blocks like: `dm, redirect, require, blacklist, whitelist, del, silence, override` basically anything that will affect the overall block itself just replace `c:role add blah blah blah` with whatever block you want!
+
 .. raw:: html
 
-    <meta property="og:title" content="Tagscript Unofficial Docs" />
+    <meta property="og:title" content="Blanks" />
     <meta property="og:type" content="Site Content" />
     <meta property="og:url" content="https://tagscript-docs.readthedocs.io/en/latest/index.html" />
-    <meta property="og:site_name" content="By _Leg3ndary#5759">
+    <meta property="og:site_name" content="Advanced Concepts">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
-    <meta property="og:description" content="The unofficial but better docs for Carl-bots Tagscript, not affiliated with Botlabs or Carl-bot" />
-    <meta name="theme-color" content="#2980B9">
+    <meta property="og:description" content="How to use blanks" />
+    <meta name="theme-color" content="#AA22FF">
