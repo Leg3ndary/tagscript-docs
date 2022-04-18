@@ -9,7 +9,7 @@ Credits
 
     ---
 
-    :img-top: /images/_Leg3ndary.png
+    :img-top: images/_Leg3ndary.png
 
     _Leg3ndary
     ^^^^^^^^^^
@@ -21,7 +21,7 @@ Credits
 
     ---
 
-    :img-top: /images/Asty'.png
+    :img-top: images/Asty'.png
     
     Asty'
     ^^^^^^^
@@ -33,7 +33,7 @@ Credits
 
     ---
 
-    :img-top: /images/Raffael.png
+    :img-top: images/Raffael.png
 
     Raffael
     ^^^^^^^
