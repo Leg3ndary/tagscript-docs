@@ -130,3 +130,6 @@ dmypy.json
 
 .vscode
 output.txt
+
+# Builds
+docs/builds
