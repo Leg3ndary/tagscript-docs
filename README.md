@@ -8,4 +8,4 @@ The main purpose of these docs is to replace the currently outdated docs of Carl
 
 ## Contributing
 
-[Read Me](https://tagscript-docs.readthedocs.io/en/latest/contributing.html)
+[Read Me](https://tagscript-docs.readthedocs.io/en/latest/info/contributing.html)
