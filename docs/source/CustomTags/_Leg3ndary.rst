@@ -1,12 +1,10 @@
 _Leg3ndary#5759
 ===============
 
-.. contents:: Table of Contents
+.. contents:: Table of Tags
 
 Suspicion Command
 -----------------
-
-`Tag Import <https://carl.gg/t/715929>`_
 
 Check for alts using a system of checks with each being given their own weight, in addition see other info about the user to manually determine if a user is "sus".
 
@@ -108,12 +106,17 @@ Check for alts using a system of checks with each being given their own weight, 
         {=(preset.punishment.final):{if({sus.score}>=90.001):Most likely an alt, command to {preset.punishment}: ```
         {tag.prefix}{preset.punishment} {target(id)} {preset.reason}
         ```|}}
+    
+    .. link-button:: https://carl.gg/t/715929
+        :type: url
+        :text: Tag import
+        :classes: btn-outline-primary btn-block
 
 .. raw:: html
 
-    <meta property="og:title" content="Tagscript Unofficial Docs" />
+    <meta property="og:title" content="_Leg3ndary#5759's Tags" />
     <meta property="og:type" content="Site Content" />
-    <meta property="og:site_name" content="By _Leg3ndary#5759">
+    <meta property="og:site_name" content="Custom Tags">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
     <meta property="og:description" content="Find _Leg3ndary#5759's tags here!" />
     <meta name="theme-color" content="#2980B9">
