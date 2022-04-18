@@ -5,41 +5,6 @@ Credits
 
     This page isn't complete
 
-.. panels::
-
-    ---
-    :img-top: images/_Leg3ndary.png
-
-    _Leg3ndary
-    ^^^^^^^^^^
-
-    Original Creator of these docs!
-
-    ++++++
-    Pages: Link Here
-
-    ---
-    :img-top: images/Asty'.png
-    
-    Asty'
-    ^^^^^
-
-    Carl-bot Help Admin
-
-    ++++++
-    Pages:
-
-    ---
-    :img-top: images/Raffael.png
-
-    Raffael
-    ^^^^^^^
-
-    Previous Carl-bot Admin
-
-    ++++++
-    Pages: Link Here
-
 .. raw:: html
 
     <meta property="og:title" content="Credits" />
