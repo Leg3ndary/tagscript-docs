@@ -5,6 +5,8 @@ Credits
 
     This page isn't complete
 
+Massive thanks to anyone who's contributed to tagscript in Carl-bot's Support Server, I'm working on figuring out why I can't add you with profile pictures but you will be added.
+
 .. raw:: html
 
     <meta property="og:title" content="Credits" />
