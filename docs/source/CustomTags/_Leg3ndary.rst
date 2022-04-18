@@ -107,10 +107,10 @@ Check for alts using a system of checks with each being given their own weight, 
         {tag.prefix}{preset.punishment} {target(id)} {preset.reason}
         ```|}}
     
-    .. link-button:: https://carl.gg/t/715929
-        :type: url
-        :text: Tag import
-        :classes: btn-outline-primary btn-block
+.. link-button:: https://carl.gg/t/715929
+    :type: url
+    :text: Tag import
+    :classes: btn-outline-primary btn-block
 
 .. raw:: html
 
