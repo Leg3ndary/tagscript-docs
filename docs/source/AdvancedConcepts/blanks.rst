@@ -61,7 +61,7 @@ There's so many different explanations on this I've just decided to pool them al
     
     This will not work the c role will always add the role
 
-    **It will run no matter what**, no matter where you put it in the code, even if you put it in an `if` statement or in a `variable` it will still run. **TAGSCRUOT DOES NOT CARE**
+    **It will run no matter what**, no matter where you put it in the code, even if you put it in an ``if`` statement or in a ``variable`` it will still run. **TAGSCRIPT DOES NOT CARE**
 
     So how do we stop this?
 
@@ -71,7 +71,7 @@ There's so many different explanations on this I've just decided to pool them al
         {if(condition):{c:role add blah blah blah}}
         {if(condition):c:role add blah blah blah}
 
-    Notice now if we run it it will literally output `c:role add blah blah blah` but don't worry thats what we want!
+    Notice now if we run it it will literally output ``c:role add blah blah blah`` but don't worry thats what we want!
 
     Now all we have to do is actually allow carl to run it so we move it outside!
 
@@ -80,9 +80,9 @@ There's so many different explanations on this I've just decided to pool them al
         {if(condition):c:role add blah blah blah}
         {{if(condition):c:role add blah blah blah}}
 
-    Now the command block will actually run because after outputting `c:role add blah blah blah` carl will add the brackets making it `{c:role add blah blah blah}`
+    Now the command block will actually run because after outputting ``c:role add blah blah blah`` carl will add the brackets making it ``{c:role add blah blah blah}``
     
-    Now all you have to do is add a `{=():}`, this will make it so when the condition fails instead of saying {} it will just say nothing.
+    Now all you have to do is add a ``{=():}``, this will make it so when the condition fails instead of saying {} it will just say nothing.
 
     Lets do one more example, I want to dm the command if no arguments are present:
     
@@ -100,9 +100,9 @@ There's so many different explanations on this I've just decided to pool them al
         {if(=={args}):dm} first we remove the brackets!
         {{if(=={args}):dm}} now we add them aroudn the outside
     
-    Finally we add a `{=():}` before it and we're done!
+    Finally we add a ``{=():}`` before it and we're done!
 
-    This can be used for many blocks like: `dm, redirect, require, blacklist, whitelist, del, silence, override` basically anything that will affect the overall block itself just replace `c:role add blah blah blah` with whatever block you want!
+    This can be used for many blocks like: ``dm, redirect, require, blacklist, whitelist, del, silence, override`` basically anything that will affect the overall block itself just replace ``c:role add blah blah blah` with whatever block you want!``
 
 .. raw:: html
 

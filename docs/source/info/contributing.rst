@@ -18,9 +18,9 @@ A Basic Guide to Contributing
 
 These docs use ReStructuredText or RST, it's a fairly simple language that you can learn here `RST Docs <https://docutils.sourceforge.io/rst.html>`_.
 
-You could also take a look at the readthedocs sphinx theme `here <https://sphinx-rtd-theme.readthedocs.io/en/stable/>`_ for more info.
+You could also take a look at the `readthedocs sphinx theme <https://sphinx-rtd-theme.readthedocs.io/en/stable/>`_ for more info.
 
-Finally tagscript parsing is here, though there's not much to know `here <https://github.com/Leg3ndary/tagscript-ansi>`_.
+Finally `tagscript parsing <https://github.com/Leg3ndary/tagscript-ansi>`_ is here, though there's not much to know.
 
 .. note::
 

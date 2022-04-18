@@ -64,7 +64,7 @@ Redirect will redirect the output to whatever channel id you provide
 
 .. warning::
 
-    The user must have the ``send_messages`` permission for this to work, or you can add an :ref:`override-label` block
+    The user must have the ``send_messages`` permission for this to work, or you can add an ``override`` block
 
 Require/Blacklist
 -----------------

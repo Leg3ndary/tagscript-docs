@@ -13,7 +13,7 @@ Home
 
     Really would like to thank `readthedocs.org <https://readthedocs.org>`_ for making this possible, thank you!
 
-This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759 <https://discordapp.com/users/360061101477724170/>`_, you may view all contributors :doc:`here. </contributing>`
+This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759 <https://discordapp.com/users/360061101477724170/>`_, you may view all contributors :doc:`here. </info/contributing>`
 
 
 .. note::
