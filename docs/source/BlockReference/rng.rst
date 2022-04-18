@@ -31,7 +31,7 @@ Weighting
 Weighting is just a simple way to add more elements without typing as much, keep in mind you don't need to provide weighting for every value, the last example shows an example of having a 1 in 5 chance of winning.
 
 Range
-~~~~~
+-----
 
 .. tagscript::
 
@@ -46,7 +46,7 @@ Range blocks generate random numbers between the 2 numbers given (inclusive) whi
 Seeds may also be provided and work exactly the same as random blocks.
 
 5050 Blocks
-~~~~~~~~~~~
+-----------
 
 .. tagscript::
 
