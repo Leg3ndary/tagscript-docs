@@ -1,6 +1,10 @@
 Home
 ====
 
+.. image:: https://readthedocs.org/projects/tagscript-docs/badge/?version=latest
+    :target: https://tagscript-docs.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
 .. attention::
 
     This is not affiliated in any way with Botlabs or Carl-bot.
