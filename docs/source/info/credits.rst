@@ -8,7 +8,6 @@ Credits
 .. panels::
 
     ---
-
     :img-top: images/_Leg3ndary.png
 
     _Leg3ndary
@@ -20,7 +19,6 @@ Credits
     Pages: Link Here
 
     ---
-
     :img-top: images/Asty'.png
     
     Asty'
@@ -32,7 +30,6 @@ Credits
     Pages:
 
     ---
-
     :img-top: images/Raffael.png
 
     Raffael
