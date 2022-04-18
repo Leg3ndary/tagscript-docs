@@ -5,9 +5,9 @@ Blanks
 
     Probably the hardest concept you'll ever have to learn in tagscript, most people give up here.
 
-There's so many different explanations on this I've just decided to pool them all here, take a stab at any of them.
+If you think you can explain blanks feel free to add a dropdown with your explanation on it.
 
-.. dropdown:: Asty (With GIF)
+.. dropdown:: Asty' (With GIF)
 
     **What is that {=():} variable that you put in your code?**
     
