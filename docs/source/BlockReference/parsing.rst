@@ -5,7 +5,7 @@ Parsing is an extremely important part of tagscript, and there are a few ways in
 
 .. note::
 
-    Parsing can be done with basically anything, though you shouldn't try to parse datetimes using methods below, that's what strf blocks are for ADD LINK HERE.
+    Parsing can be done with basically anything, though you shouldn't try to parse datetimes using methods below, that's what :doc:`strf blocks <time>` are for.
 
 Variable Parsing
 ----------------
