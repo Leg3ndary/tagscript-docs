@@ -37,7 +37,7 @@ I will attempt to keep the card images updated as future patches occur. These ca
 
 This custom command is not affiliated with or endorsed by Back 4 Blood, Warner Bros. and it's divisions, or Turtle Rock Studios. I do not own these images, I am using them under the constraints of Fair Use as established in the Copyright Act of 1976, for nonprofit educational purposes.
 
-*The image below shows the command invocation for example purposes. This invocation will be deleted upon execution in the linked version of this tag. 
+The image below shows the command invocation for example purposes. This invocation will be deleted upon execution in the linked version of this tag. 
 
 .. dropdown:: Source Code
 
