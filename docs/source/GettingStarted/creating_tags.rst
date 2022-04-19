@@ -15,10 +15,10 @@ After selecting a server, head into the **Tags** section
 
 .. raw:: html
 
-    <meta property="og:title" content="Tagscript Unofficial Docs" />
+    <meta property="og:title" content="Creating Tags" />
     <meta property="og:type" content="Site Content" />
     <meta property="og:url" content="https://tagscript-docs.readthedocs.io/en/latest/index.html" />
-    <meta property="og:site_name" content="By _Leg3ndary#5759">
+    <meta property="og:site_name" content="Getting Started">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
-    <meta property="og:description" content="The unofficial but better docs for Carl-bots Tagscript, not affiliated with Botlabs or Carl-bot" />
+    <meta property="og:description" content="How to create tags" />
     <meta name="theme-color" content="#2980B9">
