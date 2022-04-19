@@ -30,7 +30,7 @@ One of the most used blocks is the target block, it allows you to access other u
 Parameters/Properties
 ~~~~~~~~~~~~~~~~~~~~~
 
-When used without a parameter (``{user}/{target}``), the block will output the nickname of the user/target.
+Parameters can be specified within parenthesis after the block name: ``{user(PARAMETER)}`` or ``{user(PARAMETER)}``. When used without a parameter (``{user}`` or ``{target}``), the block will output the nickname of the user/target.
 
 +------------+-----------------------------------------------------------------------------------------------------------------------+
 | Parameter  | Output                                                                                                                |
