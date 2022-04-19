@@ -16,7 +16,7 @@ User/Target
 
 One of the most used blocks is the target block, it allows you to access other users data.
 
-User is the user who invoked the tag, while target is the first user that was pinged in the commands arguments, when no one is pinged, target is equivalent to user.
+``user`` is the user who invoked the tag, while ``target`` is the first user that was pinged in the commands arguments. If no one is pinged, ``target`` is equivalent to ``user``.
 
 
 .. note::
