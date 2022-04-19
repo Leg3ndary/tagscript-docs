@@ -22,7 +22,6 @@ Made an "afk" tag. When it's set to ``on`` it will inform anyone that mentions y
         {override}{{sel}}
             
 .. link-button:: https://carl.gg/t/41176
-
     :type: url
     :text: Tag Import
     :classes: btn-outline-primary btn-block
@@ -51,7 +50,6 @@ This custom command is not affiliated with or endorsed by Back 4 Blood, Warner B
         {if({in({searchterm}):{cardnames}}==true):https://raw.githubusercontent.com/Raffael7777/B4B-Card-Images/main/{replace(P,Cleaner%20Cards/):{replace(B,Burn%20Cards/):{replace(C,Campaign%20Cards/):{cardnames({index({searchterm}):{replace({searchterm},. {searchterm} .):{cardnames}}})}}}}.png|`{replace(_, ):{searchterm}}` does not appear to match a card name or part of a card name. Double check your input and spelling and try again.}
             
 .. link-button:: https://carl.gg/t/1111395
-
     :type: url
     :text: Tag Import
     :classes: btn-outline-primary btn-block

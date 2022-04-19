@@ -46,7 +46,6 @@ I would also like to mention this whole idea is possible and inspired by the stu
         {{if({displayType}==link):blacklist(https://define-tag.niloc3.repl.co/l?word={1}&time={unix}):{server(id)}}}
     
 .. link-button:: https://carl.gg/t/1217391
-
     :type: url
     :text: Tag Import
     :classes: btn-outline-primary btn-block

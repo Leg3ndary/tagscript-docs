@@ -1,7 +1,5 @@
-USERNAME#DISCRIMINATOR
-======================
-
-MAKE SURE TO ADD THIS TO THE index.rst FILE, LOOK FOR toctree AND CustomTags/TEMPLATE
+Asty'#8926
+==========
 
 .. contents:: Table of Tags
 
@@ -389,16 +387,15 @@ This is why out of frustration and as a huge QoL (Quality of Life) improvement f
         {require({requiredRolesErrorMessage} ):{requiredRoles}}
     
 .. link-button:: https://carl.gg/t/1157946
-
     :type: url
     :text: Tag Import
     :classes: btn-outline-primary btn-block
 
 .. raw:: html
 
-    <meta property="og:title" content="USERNAME#DISCRIMINATOR's Tags" />
+    <meta property="og:title" content="Asty'#8926's Tags" />
     <meta property="og:type" content="Site Content" />
     <meta property="og:site_name" content="Custom Tags">
     <meta property="og:image" content="https://i.imgur.com/AcQAnss.png" />
-    <meta property="og:description" content="Find USERNAME#DISCRIMINATOR's tags here!" />
+    <meta property="og:description" content="Find Asty'#8926's tags here!" />
     <meta name="theme-color" content="#2980B9">

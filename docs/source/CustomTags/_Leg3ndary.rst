@@ -193,7 +193,6 @@ Check for alts using a system of checks with each being given their own weight, 
         ```|}}
     
 .. link-button:: https://carl.gg/t/715929
-
     :type: url
     :text: Tag Import
     :classes: btn-outline-primary btn-block
