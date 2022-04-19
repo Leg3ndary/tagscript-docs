@@ -95,7 +95,11 @@ This is an unofficial guide to Carl-bot's tagscript, started by `_Leg3ndary#5759
     :maxdepth: 2
     :hidden:
 
+    CustomTags/TEMPLATE
+    CustomTags/Raffael
     CustomTags/_Leg3ndary
+    CustomTags/Asty'
+    CustomTags/Niloc
 
 .. raw:: html
 

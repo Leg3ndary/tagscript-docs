@@ -3,12 +3,97 @@ _Leg3ndary#5759
 
 .. contents:: Table of Tags
 
+Shell Cloud Command
+-------------
+
+Working this out took a lot of time, however I'm proud to show the tagscript community the first tag that can save data through the bot, **you don't have to do any setting up.** (Other then importing of course)
+
+You might recall **Raffael** made a tag where you would setup a role and then guess the number, you also might remember a user named **Squidtoon** made an api that did similar things however he removed his project from repl where it was hosted...
+
+**What?**
+
+**You can use this tag to do something similar to the cbsays tag where you can post a shell with text on it, you can also view other users posts or the latest post!**
+
+**Why?**
+This is just the general idea of using an api and python to interact through embed images, for those of you who don't know what an API is, its an "application program interface", you send a request to a site which then can give you something back, thats basically what I did. You send a request to a repl, the program will then save it to another further external cloud db known as mongodb (There are problems with saving data through repl which is why this part is needed).
+
+**Usage:**
+
+.. tagscript::
+
+    ?shell add <Word>
+    Your word must be less then or 10 characters
+    ?shell show <Index>
+    View already posted words, must be a number eg. view the 7th word added with the add command
+    USE 0 OR LATEST TO VIEW LATEST POST
+    ?shell cache
+    Shows the Cache which you can use to view words with the show command
+
+⚠️ **Warning.** ⚠️  
+
+People are naturally stupid. In short people will be able to use words that shouldn't be used. For this reason I highly recommend this tag be marked nsfw.
+
+Tag does not use any commands.
+
+.. dropdown:: Source Code
+
+    .. tagscript::
+
+        {=(Comment): Tag by _Leg3ndary :D Nothing should be edited in this tag... other then the variables below...}
+
+        {embed(color):{user(color)}}
+        {=(prefix):?}
+        {=(command_name):shell}
+
+        {=(Comment): Don't touch anything below}
+
+        {=():}
+
+        {=(len_args):{index(■):{args} ■}}
+        {=(type):{lower:{args(1)}}}
+
+        {=({type}):/error}
+        {=(dev/show):dev/show}
+        {=(cache):dev/cache}
+        {=(show):show/{if(latest=={lower:{2}}):0|{args(2)}}/{unix}}
+        {=(add):add/{if(=={2}):Blank|{args(2)}}/{unix}}
+
+        {{if(/error=={{type}}):embed(title):Error}}
+        {{if(/error=={{type}}):embed(description):Subcommand {if(=={args(1)}):__`Blank`__|`{lower:{args(1)}}`} not found...
+        Available options are:
+        ```asciidoc
+        = {prefix}{command_name} add <Word> =
+        [ Your word must be less then or 10 characters ]
+        = {prefix}{command_name} show <Index> =
+        [ View already posted words, must be a number eg. view the 7th word added with the add command ]
+        [ USE 0 OR LATEST TO VIEW LATEST POST THIS MIGHT NOT WORK THOUGH ]
+        = {prefix}{command_name} cache =
+        [ Shows the Cache which you can use to view words with the show command ]
+        ```}}
+
+        {{if(dev/cache=={{type}}):embed(title):Cache}}
+        {{if(dev/cache=={{type}}):embed(description):This link shows the cache which will be formatted like so:
+        ```
+        {"1":"Carl-bot","2":"Hello"}
+        ```
+        [__`Cache`__](https://leg3ndarytagscript.tenshibot.repl.co/dev/cache)}}
+
+        {=(endpoint):{if(/error!={{type}}):{{type}}}}
+
+        {=(api_endpoint):https://leg3ndarytagscript.tenshibot.repl.co/{endpoint}}
+
+.. link-button:: https://carl.gg/t/856897
+    :type: url
+    :text: Tag Import
+    :classes: btn-outline-primary btn-block
+
 Suspicion Command
 -----------------
 
 Check for alts using a system of checks with each being given their own weight, in addition see other info about the user to manually determine if a user is "sus".
 
 .. tagscript::
+
     {=(ud.seconds.points):3} {=(README):Users account age is under 24 hours old, usually an alt MAKE THIS THE BIGGEST NUMBER}
     {=(ud.minutes.points):2} {=(README):Users account age is 1-30 days old, could be an alt would recommend keeping an eye on the user}
     {=(ud.hours.points):1} {=(README):Users account age is 1-12 months old, again could be an alt but not likely}
@@ -108,8 +193,9 @@ Check for alts using a system of checks with each being given their own weight, 
         ```|}}
     
 .. link-button:: https://carl.gg/t/715929
+
     :type: url
-    :text: Tag import
+    :text: Tag Import
     :classes: btn-outline-primary btn-block
 
 .. raw:: html
