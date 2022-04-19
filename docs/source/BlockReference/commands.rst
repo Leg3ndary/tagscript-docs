@@ -3,9 +3,7 @@ Commands
 
 .. caution::
 
-    Want to stop a command block from conditionally running?
-
-    Remember to use blanks ADD LINK HERE PLEASE
+    Want to stop a command block from conditionally running? Remember to use :doc:`blanks </AdvancedConcepts/blanks>`!
 
 .. tagscript::
 
