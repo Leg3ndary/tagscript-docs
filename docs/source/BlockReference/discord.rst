@@ -72,7 +72,7 @@ Contains details about the server
 Parameters
 ~~~~~~~~~~
 
-When used without a parameter, the block will output the servers name
+Parameters can be specified within parenthesis after the block name: ``{server(PARAMETER)}``. When used without a parameter (``{server}``), the block will output the server's name.
 
 .. warning::
 
@@ -120,7 +120,7 @@ Contains details about the channel
 Parameters
 ~~~~~~~~~~
 
-When used without a parameter, the block will output the channel name
+Parameters can be specified within parenthesis after the block name: ``{channel(PARAMETER)}``. When used without a parameter (``{channel}``), the block will output the channel's name.
 
 +-----------+---------------------------------------------------------------------------------------+
 | Parameter |                                        Output                                         |
